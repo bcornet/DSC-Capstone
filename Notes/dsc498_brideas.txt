@@ -1,0 +1,66 @@
+Quantum Tech. Survey
+Raw Image Scanner
+MIPS Decompiler
+Rules Analyst
+Socialization Helper
+Help A Professor
+Misc. Resources
+Challenges
+
+
+Quantum Tech. Survey
+Collect details on published research on quantum technologies from various sources (IEEE, commercial, etc.)
+Harmonize data set for analysis: contributors, dates, tags, etc.
+Determine high-focus areas based on time, region, methods, IF (Impact Factor), industry support
+
+
+Raw Image Scanner
+Create system that accepts an image as a template and compares it to a camera image
+Include generating lists or tables, filling templates, or highlighting differences
+Provide image correction for skewed or warped camera images
+
+
+MIPS Decompiler
+Convert MIPS Assembly language code into popular modern iterative/compiled languages
+Revert decompiled or modified code back into MIPS Assembly
+Examine compatability with use on modern hardware
+
+
+Rules Analyst
+Interpret rulesets of various sports or games from source rulebooks
+Create model for ML using supervised/unsupervised learning
+Determine impact of rule changes in style of professional-level play
+
+
+Socialization Helper
+Create platform to encourage online interaction among friends/family with positive reinforcement
+Analyze usage habits to help users deal with loneliness and depression
+Devise security and privacy methods to avoid improper use
+
+
+Help A Professor
+Dean of CAS Prof. Pauline Entin, Prof. Shannon Jenkins: comparing online vs. in-person learning
+Prof. Keivan Sadeghzadeh:
+* 1. Predictive Models for Preventable Readmission for Mental Patients Using Socioeconomic Disadvantages [Ongoing Project]
+* 2. Detecting and Predicting Medical Errors in Cancer Screening Process [New Project]
+* 3. Mental Health Service Supply and Demand in the Post-Pandemic Healthcare [New Project] 
+
+
+Misc. Resources
+HTML parsing for web data, Optical Character Recognition (OCR) for converting images to text
+R, MATLAB, Python, Java, C++, SQL, Assembly language tools as needed
+Viewers like you!
+
+
+Challenges
+Machine learning methods in Spring 2021
+Artificial intelligence methods TBA
+Physical limitations during pandemic
+
+
+[hey, put this into a slideshow with all them purty pictures]
+
+
+
+
+

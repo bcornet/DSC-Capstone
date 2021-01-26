@@ -1,0 +1,56 @@
+DSC 499 first meeting
+
+get Scott up to date
+
+expected 5 hours/week
+meetings: feedback, catch-up
+
+
+15% documentation on github
+10% introduction report
+25% end-of-year talk
+25% end-of-year report
+15% weekly project updates [attendance]
+10% special topic talks
+
+
+github code needs to be both available, working, non-shitty
+
+2-3 pages for intro report
+1 page for "what are you trying to answer"
+1 page for "where do things stand"
+1 page for "what needs to be done"
+
+basically a summary, can be bullet points
+
+
+bad: "I need data for my model"
+good: "I need validated MLB payroll data from 2015-2018 in .csv"
+
+reports don't need to be long (8 or 10 is an absolute MAX)
+don't want a laundry list of what was done, 
+just summarize and highlight
+
+special topic talks is to talk about something you excel at
+related to data science (generally tools)
+estimated 5-20 minutes (10 expected)
+
+
+Scott: gonna do github tutorial
+
+project updates: short and to the point, 5-10 minutes
+
+remember to aim for 5 hours/week! don't need to revolutionize
+
+
+send intro report as pdf
+include name/class in title
+
+"Scott Field DS report"
+
+SCOTT DOESN'T HAVE MICROSOFT WORD
+(probably for the best)
+
+
+meetings can go on until we're done
+expect to leave by 4:30 anyway

@@ -1,0 +1,29 @@
+DSC 498
+10/7
+Week 2 technically!
+
+presentation time baby!
+
+
+Brianna: Cancer screening
+Bri: Image scanning
+Nick: Supermarkets analysis
+Cachelle: Data Science about Data Science
+Marco: ML on handwritten digits
+Leo: Baseball salary cap, pitching vs. hitting by salary
+
+Brianna: have you discussed selecting a cancer based on its relation to potential long-term effects of COVID-19?
+alternatively, will COVID have any impact on your choice?
+same for Nick, where shopping habits are affected by the pandemic
+
+Cachelle: why not something that analyzes "unclean" data?
+	determine how homogeneous a column is:
+		deviation of possible values
+		flexibility of data under different types
+	spot null values
+
+
+in every class, we talk for 10-15 minutes to discuss source, progress, etc.
+basically weekly reports like with Julia
+
+check out Veritone? supposedly related to what I'm doing (AI company)

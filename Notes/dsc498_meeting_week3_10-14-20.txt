@@ -1,0 +1,39 @@
+DSC498 week 3 - 10/14
+
+Nick: got some data, set it up! that's it
+
+Brianna: preparing for final selection, has a report on what/why
+- cancer types, screening processes, impact of cancer (NOT just survival rate)
+- data:
+	quantitative (bloodwork, tumor markers, biopsy results, genetics)
+	qualitative (physical exam, fam. history, scan results, subtype of cancer)
+- thyroid: examining overdiagnoses, long-term implications of treatment vs. lack thereof
+- lung: looking at causes that aren't triggered by first-hand smoking
+- other cancers considered but not used: 
+- there's three: advisor, grad student (lung/breast), Brianna (thyroid/breast)
+- will select if there's a great data set to go with
+
+Bri: tested with MSPaint image, ACNH, MHGU
+- can succeed with text broken down by blocks, but may still have issues with accuracy
+- will still require breaking down image into sections either by user or through recognition
+
+Leo: found some basic MLB data!
+- "last 25 world series winners with payroll ranks"
+- "average wins and average payroll from 2006-2008"
+- team payrolls by year
+- hypothesis: salary matters less than quality of players
+- what about draft picks? individual salaries and performances? other sports?
+
+Marco: reading and programming
+- understanding tangent distance instead of SVD or Euclidean
+- can't run because it's a slow algorithm?
+- seems to be m*n*k for m*n pixels and k rotations?
+- Marco thinks the issue is with his implementation mostly
+- Donghui asks: is it slow in the training stage or the testing stage?
+	it seems like there's a lot of duplicate calculations
+	calculate the matrix for each version
+
+Ziyu: COVID-19 in the US from April to ?
+- no idea
+
+Cachelle: absent, what gives?

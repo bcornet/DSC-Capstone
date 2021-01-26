@@ -1,0 +1,85 @@
+Brianna: lung cancer data
+lung cancers: does this include trachea?
+
+age at diagnosis vs. cases per year:
+what about instead of cases per year, it's cases per year per capita
+
+exit: does this include unrelated causes of death?
+
+data harmonization?
+UMass Med?
+
+most fun: downloading 20 excel files that had 10 points of data that can't be used!
+actually: working with people
+
+
+
+
+Bri: nobody cares
+
+
+
+
+Leo: team salary and success
+R package: 'lahman'
+
+playoff depth for each team/year?
+std of player salary?
+
+
+
+Nick: comparison of store sales data and customer habits
+considering comparison of shopping options
+
+how big is that customer data set?
+why Microsoft Access?
+
+
+
+
+Marco:
+classify digit images (MNIST, Postal Service, etc.)
+trying to learn machine learning stuff
+
+had success with K-means, SVD, tangent by pixel transform w/ interpolation (SVD best)
+
+unsuccessful with tangent by finite diffs
+
+hasn't tried K-NN, neural networks
+working on PCA then clustering
+
+strugglin with the math
+
+how big is this data set? or a given image?
+color bits?
+image transformations?
+
+
+
+Cachelle:
+DataMatch! trying to help teach DS by looking at a data set
+evaluate data set and determine ideal methods
+
+using Flask (web framework for Python)
+
+Bootstrap 4, CSS, JavaScript, Flask
+
+
+back-up? back it up! don't start over
+
+
+
+Hunter: analyze plant diseases through leaves
+what kind of plants?
+
+
+
+8-10 pages for final paper
+background of project, high level details,
+what done, what doot
+don't make it all images
+it shouldn't be a big thing, just summarize what we've done
+idea is just to deliver a good project NEXT semester
+
+for Winter break: up to you!
+

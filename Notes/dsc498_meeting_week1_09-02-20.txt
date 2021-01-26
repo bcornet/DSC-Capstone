@@ -1,0 +1,82 @@
+ECE 498
+Donghui!
+Wednesdays 3PM - 5PM
+http://www.math.umassd.edu/~dyan/
+
+See also:
+https://sites.google.com/site/umassdmth499/
+Check "Consulting" for some examples
+
+Main idea of first semester is to select a topic and get started!
+Second semester is about finishing project and giving a final presentation, also a final report.
+
+Since it's a capstone project, it needs to be more substantial than the average course project (usually double the amount of work).
+
+Day 1: examples of potential projects Donghui has supervised previously, suggestions on how to pick up a project
+Next three weeks: no class session! Next class will be September 30th!
+
+Make an appointment (maybe several) with Donghui to pick a topic.
+By next month, we're expected to have a topic.
+
+We'll present the rough idea of the projects in class:
+- Why do it?
+- Rough plan?
+Probably two weeks of presenting? Maybe more or less depending on how much people want to talk about.
+
+Then we'll be presenting our progress weekly.
+
+Two options for presentation order:
+- Donghui randomly generates order at the beginning of the semester
+- Alphabetical order based on COIN
+I voted 2! Apparently we're going with that. I'm second!
+
+
+Previous example: extension of a course project with Donghui in DSC 101:
+https://sites.google.com/site/umassddsc101/09-homework/lab-z0
+- Searched on cars.com for "Used" "Ford Taurus" "Within 30 miles"	
+- Gathered all of the data from the website
+- User-interface! Need to be able to work with the data after collecting it!
+Actual model varies. Can build an app so a user can use it!
+
+
+Previous example: sports analytics! Analyzed data from last 10 years from basketball something (probably NBA)
+Exploratory data analysis: playing around with the data, not so much modeling
+Saw a trend in games (particularly high-level like NBA): percentage of 3-point shots (ratio of all shots?) increases over the course of a season
+Looked at these values amongst players individually
+With the increase of 3P shots, probability of winning affected by 3P success? I didn't get all of that
+Strategic value of this data, think about it yo
+
+Previous example: more sports! Soccer thing
+- player's photo record
+- built model predicting outcome (of a game? I missed it)
+- created system so users could determine their own model (assigning weights)
+Engages fans of the game! consider the value of data that people find INTERESTING rather than only focusing on scientifically useful
+- relevant to the business aspect: league/team owners, advertisers
+
+
+Previous example: natural science! tree ring analysis
+- look at tree rings for age, use areas between rings to determine climate conditions at a given year
+
+
+and also photo recognition of spiders
+and also commuting patterns to determine regions in MA/RI
+computational social science!
+probably a whole lotta other stuff that was said before I tuned out
+
+
+Last example! Corona data set
+- see Donghui's site, check under UMassD COVID-19 on the sidebar for data from UMD and MA
+- also http://www.math.umassd.edu/~dyan/covid19.html
+
+
+well that's it for now!
+be sure to make AT LEAST ONE Zoom appointment to talk to Donghui about a plan!
+- appointments are specifically for classtime
+- 6 hours are possible between both periods, 8 students! expect 45 minutes for both meetings
+topic AND implementation! make as many appointments as needed!
+15% each for both meetings!
+30% for a report about the project [end of semester]
+
+
+presentation: simple slides, like maybe 10 slides (40% of the grade!)
+grading will be based on appointment and presentation

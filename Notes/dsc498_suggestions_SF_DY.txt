@@ -1,0 +1,37 @@
+Hi DSC students, 
+
+  As many of you already know, undergraduates are required to participate in a year-long capstone course and graduate students are required to either undertake a capstone (1 semester) or thesis (2 or more semesters) project. 
+
+  I would like to share with you 3 ongoing research projects from Professor Keivan Sadeghzadeh. Depending on your background, these projects might suitable for an undergraduate or graduate project.
+
+  If you are interested in these: (i) undergraduate seniors should discuss with the capstone instructor first, (ii) graduate students should directly contact Prof. Sadeghzadeh (ksadeghzadeh@umassd.edu). Note that graduate students must enroll in the data science capstone course if they wish to work on a project.  
+
+1. Predictive Models for Preventable Readmission for Mental Patients Using Socioeconomic Disadvantages [Ongoing Project]
+ 
+We are interested in finding patterns between psychiatric readmission records and geo-socioeconomic metrics using statistical and spatial analysis. This study will estimate the strength of predictors for readmission of psychiatric patients and will address the association between socioeconomic status to the preventable readmissions.
+
+2. Detecting and Predicting Medical Errors in Cancer Screening Process [New Project]
+
+In this research project we will use available data submitted in screening centers and use advanced statistical methods for analyzing operational failure in a specific screening guideline by focusing on preventable errors of diagnosis in screening procedures and applying supervised machine learning techniques to predict false negatives, false positives, as well as overdiagnosis as qualitative outcomes.
+
+3. Mental Health Service Supply and Demand in the Post-Pandemic Healthcare [New Project] 
+
+The objectives in this research projects are (1) reviewing the topic systematically, (2) analyzing models for supply and demand in the healthcare services for psychiatric patients caused by pandemic and (3) predicting challenges in this domain in the post-pandemic era.
+
+Best,
+Scott
+
+Professor Keivan Sadeghzadeh
+ksadeghzadeh@umassd.edu
+
+
+
+
+For those who are still shopping for Capstone project ideas
+
+The Dean of CAS, Prof. Pauline Entin, is interested in comparing the efficiency of online learning and the traditional in-person instruction. Apart from statistical analysis, this project will involve several important aspects of data science, such as study design, data collection, observational studies etc which are often overlooked in a typical data-driven project. You will be working with the CAS team, led by Prof. Shannon Jenkins of Political Science, on this project. Please drop me a note if you are interested in this project. Thanks.
+-D.H.
+
+Prof. Pauline Entin
+Prof. Shannon Jenkins
+
