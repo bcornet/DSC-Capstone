@@ -1,7 +1,7 @@
 # DSC-Capstone
 UMass Dartmouth Data Science Capstone Project - Repository for DSC 498/499 files
 
-**Contact:** [Brian Cornet](bcornet@umassd.edu)
+**Contact:** Brian Cornet [test](emailto:bcornet@umassd.edu)
 
 **Project:** "Raw Image Scanner" (feel free to come up with an actual name)
 
