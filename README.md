@@ -34,6 +34,8 @@ Check the Notes folder for weekly notes and doodles. Presentations contains vari
 - [ ] Retire to the woods like Thoreau
 - [x] Stop writing checklists
 
+Rough timeline: February for implementation, March for experimentation, April for writing.
+
 ## Important Links
 
 * [PyTesseract on PyPI](https://pypi.org/project/pytesseract/)
