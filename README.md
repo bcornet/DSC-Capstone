@@ -25,6 +25,7 @@ Check the Notes folder for weekly notes and doodles. Presentations contains vari
 - [ ] Implement rotation method
 - [ ] Implement border addition/removal methods
 - [ ] Experiment with off-screen text-based images
+- [ ] Experiment with automating correction methods
 - [ ] Experiment with user-defined dictionary support
 - [ ] Begin development of image comparison methods (nah)
 - [x] Prepare final presentation and report (DSC 498)
