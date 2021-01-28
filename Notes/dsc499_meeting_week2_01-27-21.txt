@@ -1,0 +1,144 @@
+1/27/2021
+
+[Caitlin has a kidney infection AND it's her birthday,
+ may dip out during the meeting here and there]
+
+
+Brianna:
+air quality index (AQI) in data set? [yep]
+
+originlab.com/index.aspx
+[was free last year, $60/year sub for students]
+
+geographic clustering: in China, will expand to US
+lots of regression analyses
+
+	Marco asks: assumption of independent variables?
+	Brianna: lots of covariate variables are grouped together in dict
+	e.g. tumors_count and tumors_size -> tumor_mass
+	also considering danger from tumor itself (benign vs. malignant)
+	
+	Scott asks: is this data set public?
+	Brianna: yes and no; from NIH, can be obtained through request with proposal
+	
+	Scott asks: who are Yasaman and Kievan?
+	Brianna: you sent me an email, goofus
+	
+	Scott asks: summary of project? (I missed it)
+	Scott asks: hospital collab still intact?
+	Brianna: yes through Yasaman/Kievan (probably)
+	
+	Scott asks: types of smokers (x pack/day, second-hand, etc.)
+	Brianna: several groups, but nothing about 2nd-hand
+
+	Cachelle asks: regional correlation regardless of smoking?
+	Brianna: spatial data possible, need to see what the data shows
+
+
+
+Bri: bunch of questions, I forget
+- send github link to Scott
+
+	Brianna asks: would simpler words help with recognition?
+	- OCR looks for characters rather than words, so it doesn't care
+	- it DOES have an issue with strange fonts and characters, but correction methods are designed to improve character detection
+
+
+
+Hunter: [I missed the whole thing]
+
+
+
+Nick: SUPERMARKET SWEEEP
+- finding out why customers go to distant stores to get items offered at the same price
+- Coop dataset
+column names? how was it compiled?
+
+	Bri asks: what unit is "AMOUNT_SPENT" in? three decimals, so not USD
+	Nick: it's in the data set dictionary
+	
+	Scott asks: any US data?
+	Nick: maybe, but focus is on this set for now
+	
+	Marco asks: any data for individual rather than supermarket?
+	Nick: [I missed this]
+	
+
+
+Cachelle: DATAMATCH
+platform to import/clean dataset
+ML methods relevant to dataset
+
+Boostrap 4, CSS, JavaScript, Flask
+
+[missed a bunch, oops]
+
+is the website live? still on laptop
+thinking ahead: hosting? not sure yet
+hosting temporary? github probably
+- can add readme/wiki to repeat
+intended audience? e.g. tutorials for beginners or expected?
+- intended for all!
+planning to support ANY data set? guidelines necessary
+can you have something to evaluate the data set?
+- how to determine if a set is clean?
+method to cast columns as various objects and evaluate null percentage?
+- maaaybe
+
+MASCOT? most important question in your entire career
+
+
+Jimmy aka Leo aka Jimmy: PAYROLLIN'
+[Jimmy wants in on the sports stats field]
+
+Lahman package in R data libraries
+
+
+obvious, but COVID cutoff (no data for 2020 season and beyond)
+
+	Scott: measuring success? 
+	Leo: playoff depth
+	
+	Scott: data includes runs scored, runs allowed, etc.?
+	Leo: has stats from seasons from 1851-present including player stats
+	
+	Scott: payroll from lahman?
+	Leo: salary set in database
+	Scott: group by role (starting/closing pitchers, etc.)
+	
+	Scott: visualization tools? tableau?
+	Leo: we were gonna use it in DSC 201 but it was dropped
+	Cachelle: free for students, easy to get activation codes, can change data through tableau
+	Scott: UMD tableau link?
+	Cachelle: posting it in chat
+	Brianna: we used it in DSC 201
+	Cachelle: PowerBI?
+	http://www.cis.umassd.edu/~dkoop/dsc201-2018fa/assignment2.html
+	https://www.tableau.com/academic/students
+
+
+Ziyu: COVID-19 cluster analysis
+[missed this]
+	Scott: any data on new mutations?
+	Ziyu: yes, just trying to figure out how to fit it in
+	
+	Scott: Donghui works on this, any work with him?
+	Ziyu: I would but I don't have the time for it
+	Scott: any coordination with him?
+	Ziyu: last semester yes, this semester no
+
+
+Marco: quick summary about scan
+KNN: k-nearest neighbor
+convolutionary neural networks, meta modeling
+training to define differences of numeric shapes
+[no questions!]
+
+
+next week: project updates and discussion
+- discuss what ye did
+- beginning of semester reports due
+-- key factor is TIMELINE! can be bullet points even, just summarize
+
+- special topic talk: first come, first serve
+- dates are also first come, first serve
