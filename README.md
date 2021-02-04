@@ -12,6 +12,9 @@ Relevant project files will be kept in the root directory. This includes the pri
 
 Check the Notes folder for weekly notes and doodles. Presentations contains various Microsoft PowerPoint Presentation (.pptx) and Microsoft Word Document (.docx) files both in their original formats and as .pdf files. As of January 26th, the latter folder takes up about 60 MB, so heads up.
 
+## What's the Deal?
+I came up with a bunch of project ideas for the capstone, most of which I was hoping would be useful or enlightening to develop. This one was my favorite, so I went with it. Pretty sure my plan was to use this to make it easier to nerd out over my stats and inventories in video games. Bonus: being able to use images from stuff I like as examples! It's been a hoot thus far. The last semester was largely a matter of familiarizing myself with Tesseract OCR with some basic experiments involving image clean-up. Taking ECE 621 at the same time was super convenient too.
+
 ## Project To-Doots
 - [x] Install Tesseract OCR and PyTesseract
 - [x] Experiment with basic PyTesseract commands in Python
@@ -21,26 +24,28 @@ Check the Notes folder for weekly notes and doodles. Presentations contains vari
 - [x] Implement discrete wavelet transform method
 - [x] Implement Levenshtein ratio/distance method
 - [x] Prepare final presentation and report (DSC 498)
+- [x] Implement xy-plane rotation method
+- [ ] Implement xz- and yz-plane skew methods
 - [ ] Implement noise removal method
 - [ ] Implement dilation/erosion methods
-- [ ] Implement rotation method
 - [ ] Implement border addition/removal methods
 - [ ] Experiment with automating correction methods
 - [ ] Experiment with off-screen text-based images
-- [ ] Experiment with user-defined dictionary support
+- [ ] \(Optional) Experiment with user-defined dictionary support
 - [ ] \(Optional) Begin development of image comparison methods
 - [ ] Prepare final presentation and report (DSC 499)
 
 ## Expected DSC499 Timeline Probably
-- February 
-  1. Noise Removal method
-  2. Dilation/Erosion methods
-  3. 2D/3D Rotation methods
-  4. Border Addition/Removal methods
+- February
+  1. xy-plane Rotation method
+  2. xz- and yz- plane Skew methods
+  3. Noise Removal method
+  4. Dilation/Erosion methods
+  5. Border Addition/Removal methods
 - March
   1. Automated correction detection
   2. Off-screen text experimentation
-  3. English and custom dictionary support
+  3. \(Optional) English and custom dictionary support
   4. \(Optional) Image comparison
 - April
   1. Initial draft of presentation
@@ -51,7 +56,7 @@ Check the Notes folder for weekly notes and doodles. Presentations contains vari
   1. Presentation
 
 ## Topic Talkies
-* Using BeautifulSoup for Web Scraping
+* Web Scraping with BeautifulSoup
 * Designing Java Software for SQL Databases
 * Writing with LaTeX in Overleaf
 * Making the Most out of Desmos
@@ -64,6 +69,8 @@ Check the Notes folder for weekly notes and doodles. Presentations contains vari
 * [PyTesseract on PyPI](https://pypi.org/project/pytesseract/)
 * [Tesseract OCR on GitHub](https://github.com/tesseract-ocr/tesseract)
 * [Tesseract's ImproveQuality Documentation](https://github.com/tesseract-ocr/tessdoc/blob/master/ImproveQuality.md)
+  * [Rotation Sample from endolith on GitHub](https://gist.github.com/endolith/334196bac1cac45a4893#file-rotation_spacing-py)
+  * [Skewing Sample from mzucker on GitHub](https://github.com/mzucker/unproject_text)
 * [GitGuide on GitHub](https://github.com/git-guides/)
 * [OriginLab Graphing Software](https://www.originlab.com/index.aspx)
 * [Tableau for Students](https://www.tableau.com/academic/students)
