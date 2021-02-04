@@ -1,0 +1,100 @@
+dsc499_meeting_week3_02-03-2021
+2/3/2021
+
+
+LUNCH TALKS
+http://cscvr1.umassd.edu/seminars-2020.html
+
+some are recorded!
+
+
+in class: about 15-20 minutes
+in cscvr: about 45-60 minutes
+
+
+DON'T FORGET THE REPORT! due tonight
+
+at most:
+1 page of a timeline
+2 pages of what you're doing, why you're doing it, what you've done
+
+did you know Scott keeps detailed notes about what we're presenting?
+iiiiiiiiit's true
+
+
+MARCO:
+three algorithms so far
+new one: KNN (K-nearest neighbors)
+has a confusion matrix [compare interpreted to actual]
+
+now using MNIST database
+
+	Scott: a lot of algorithms are cloaked in terminology despite being simple!
+
+YOUR HANDWRITING IS NOT TERRIBLE MARCO
+BELIEVE IN YOURSELF
+
+distribution of characters can affect interpretation
+
+	Scott: are you saying having more 8s would improve acc. of 8?
+	Marco: opposite; having more 0s would improve acc. of 8
+
+7s interpreted as 1s, but 1s not interpreted as 7s
+4s as 9s, but 9s more likely to be seen as 7s
+
+set a k based off of the error rate? approx 95% accurate currently
+height scaling for euclidean distance?
+- solution was to preprocess database so lines are hopefully centered
+- but nothing for rescaling?
+	Marco: this would be a lot of work! [would it though?]
+	- determine each character's height/width
+	- determine average height/width
+	- skew each character to average
+
+also had troubles with uint8 and differences
+- solved by converting to int32 to handle difference/squares properly
+
+60000*10000 something or others
+
+
+
+BRIANNA:
+epa.gov/outdoor-air-quality-data
+
+comparing air quality in US vs. lung cancer incidences
+firefighter rates to look at
+smoking history, age
+
+county-level data? may be available in EU countries [smaller regions]
+air quality: any composition of specific chemicals?
+everyone in the study is mostly over 50
+
+	Scott: if person is non-smoking and in age group, is occ. of lung cancer affected by variables? something like that
+
+	Marco: does screening info have details about where an individual lives? [e.g. patient lives on Cape Cod but screens in Boston]
+	Brianna: good question! can look
+
+
+
+BRI:
+figuring out how to do it, THEN make sense of the innerworkings
+- radon, blackman, rfft, etc.
+
+next week: look at skewing!
+- rotation is just xy-plane; need xz- and yz-planes
+
+
+
+JIMMY:
+having trouble filtering (slicing?)
+recommended by Scott and apparently Donghui:
+https://www.rdocumentation.org/packages/dplyr/versions/0.7.8/topics/filter
+maybe also tableau
+
+should maybe do comparison of players by salary?
+- yes! it's interesting, it's another angle to explore
+
+check out 538 for a jumping off point
+
+
+[had to leave at this point]
