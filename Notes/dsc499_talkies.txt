@@ -1,0 +1,34 @@
+TOPIC TALK IDEAS
+
+Web Scraping with BeautifulSoup
+	Demonstrating how to use Python's BeautifulSoup library to scrape webpages for data and formatting/storing results with pandas. Ideally would include authentication methods for restricted pages and user-specific content.
+Designing Java Software for SQL Databases
+	Overview of java.sql library classes such as Connection and PreparedStatement, Java methods for gathering and modifying SQL databases, basic SQL commands and syntax, and representing pulled data with JTables from java.swing.
+Writing with LaTeX in Overleaf
+	Intro to the LaTeX language for writing research papers and math equations. [This is probably better for a 15-20 minute talk.]
+Making the Most out of Desmos
+	Demonstrating various Desmos commands for calculations, verifying algebra, drawing lines/areas/plots, creating functions and sets, convenient LaTeX code writing, and a look at the world of Desmos art.
+Deciphering Older Data Structures
+	Investigation of old unencrypted data types such as dBase II .dbf files or MIPS Assembly structures. Would include methods for interpreting these structures in modern languages through bitwise operations, byte/halfword/word and signed/unsigned values, fixed and variable length fields, etc.
+Working with Regex Patterns
+	Basic tips and tricks for using Regex patterns in Python and Java.
+Quantum vs. Classical in Data Science
+	A look at quantum computers with a brief intro to quantum states. Primary emphasis would be on comparing the efficacy of quantum vs. classical computing methods, a look at current quantum computers, and a demonstration of Qiskit, a Python quantum computing simulation module.
+Data Science for Funsies
+	Emphasizing the potential of data science for topics you'll actually enjoy instead of analyzing car models and sales data again. Examples: generating art/music from data, datamining in video games, making silly bots, and other things that hopefully make learning data science FUN (as if it wasn't already).
+
+For any of these, I'd like to prepare materials for audience participation. That means links to relevant websites, software downloads, pre-written code (Jupyter notebook and .py files for Python, .java for Java, etc.), example data files, etc. Also the presentation slides themselves would be available for immediate download -- everyone should always be able to move at their own pace!
+
+
+Other notes:
+
+LUNCH TALKS
+http://cscvr1.umassd.edu/seminars-2020.html
+
+Some are recorded, check em out
+
+Presentation time:
+In class: about 15-20 minutes
+In cscvr: about 45-60 minutes
+
+This counts for 10% of the course grade!
