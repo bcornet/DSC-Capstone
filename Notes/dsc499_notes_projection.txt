@@ -1,0 +1,34 @@
+homographies:
+	a: horizontal stretch (scale)
+	e: vertical stretch (scale)
+
+	b: horizontal shear (skew)
+	d: vertical shear (skew)
+
+	c: horizontal shift (translation)
+	f: vertical shift (translation)
+
+	g: xz perspective distortion
+	h: yz perspective distortion
+
+(a,b,d,e cover rotation)
+
+physical limitations:
+- rotation could be anywhere in 360 degrees
+- perspective is limited to (-90, 90) degrees [can't take a picture from behind screen]
+
+in reality:
+- people generally don't take super off-angle pictures
+- both rotation and perspective are likely within 45 degrees
+- 90/180/270 rotations for camera gyro may be worth considering
+- if a person can't read something, a computer probably can't either
+
+
+
+
+unproject_text uses Hough transform
+
+
+
+horizontal skew (final transform):
+- go for minimum width of widest character OR soft max of convex hulls

@@ -1,0 +1,85 @@
+dsc499_meeting_week4_02-10-21
+
+Scott: busy day! working on a grant to fund DSC research
+getting like 10 emails every half hour
+
+today is just more project update talks
+
+
+Bri: look into details on methods, updates
+
+pull request: Scott's gonna tell me about it later
+- fixed issue with line 135
+
+
+
+Brianna:
+- looking into new data sets
+- focusing on data that isn't normally looked at
+- found a lot of trash, but one good one from 2009 for non-smokers
+was 10% non-smokers with lung cancer, now 20%?
+has year-over-year for data of lung cancer types
+also includes case scenarios for lots of cooking environments (coal stoves, deep fryers, etc.)
+info from iarcce.com, can get it but it requires approval
+
+pubmed.ncbi.nlm.nih.gov/33433946
+or
+https://acsjournals.onlinelibrary.wiley.com/doi/10.3322/caac.21654
+
+	Scott: this project raises good questions about limiting the scope of a project
+	Brianna: issues with groups (smoked once ever grouped with pack a day)
+coal mining study
+
+check out this site:
+https://zenodo.org/
+journals where data sets are (mostly) required!
+
+
+Marco:
+- tested a hyper parameter (the k in k means)
+- majority vote testing from 1 though 10
+- doesn't seem to make a huge difference in variance regardless of k (<1%)
+- used cross-validation (k-fold) [test half against half]
+	Scott: keep looking at k-nearest neighbors or move to convolutional neural networks?
+	Marco: probably! in time
+
+
+Cachelle:
+- working on the page, including summary
+- need sample data! scipy maybe
+
+
+Nick:
+- asked manager about data?
+- google search of dataset, found some on kaggle.com
+- plots in csv file, possibly from tableau
+
+
+Jimmy:
+- looked at tutorials in [something] package, looked at 538
+- wants to focus on performance after signing contract to predict performance tanking
+
+	Scott: if you come across a dataset locked behind a paywall (like $50 or so), DSC can pay for it!
+	- maybe not a $1000 set but something cheapish
+
+
+Hunter:
+- had problem with data set not compiling with code
+- keras library is bein butts maybe
+	Marco: if you load two libraries that use the same function, one will overwrite the other
+	Scott: that's awful
+
+
+
+
+LAST COMMENTS:
+topic talks?
+	gonna email details
+	Leo wants to go over the background of his talk
+	Brianna: AWS next gen stats for sports stuff
+	Scott had a friend who looked into getting an analyst position with the Cubs, was SUPER HARD and competitive
+	Cachelle: LinkedIn too
+	Scott: maybe start low on the totem poll, then work your way up
+	- get in with UMD baseball team!
+	- guy who made this got hired by some university's coach, expects to move up over time
+	good luck yo
