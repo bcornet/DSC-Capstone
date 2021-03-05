@@ -1,0 +1,159 @@
+dsc499_meeting_week6_02-24-21
+
+
+process for lunch talkie:
+declare that you wanna do that
+any day that's free during lunch hour can be used!
+
+
+
+Brianna topic talk:
+Automation Anywhere (now a consultant with them!)
+now a certified RPA [Robotic Process Automation] 
+took over two weeks to get credentials after filling out form, so no demo for that
+
+- can sign up for AA and make a bot!
+- not free unless you're special like Brianna
+
+shows how many task bots you've made and what your most used is
+shows not only what it does but also errors (including where the errors are from)
+
+story: company had table of people's info
+they had to enter it into a form, that was tedious
+made a bot that does that for em
+can launch websites, record/capture, pull pictures/images
+
+eventually writes all the collected data into an excel file
+puts it into the form on the site, sends an email saying it's done
+
+sometimes takes a minute to install to computer
+
+example: takes a webpage of 5 people or so
+copies their data
+runs the task as if done by a human automatically
+
+tech training school: teaches RPA
+there's a thing to apply (lumaxia.com)
+
+normally would have to write it all down and do it manually
+
+can do replies in plain text or HMTL [Brianna does her in HMTL to make it look legit]
+sends emails and probably replies to csv locally
+
+
+Email: Connect
+when entering, it DOES ask for username and password (since it goes in there)
+have the ability to encrypt credentials [265 encryption; did she mean 256?]
+
+if interested:
+being an RPA developer, you make pretty good money!
+also interesting; so many things you can automate
+goofy stuff:
+ guy and his brother would prank each other with bots
+ rickrolling
+
+www.automationanywhere.com/
+make sure you do this on Windows; not good with Apple
+
+automationanywhere unniversity to get credentials 
+- can do Learn on Demand, free option
+
+- different from "quiet" bots? 
+
+	Cachelle: super interested!
+	this bot can manage people's credentials, [something else]?
+	Brianna: the company lets us see when someone uses the bot, [something about the company decides something]
+	if I launch a website, you can see what's being extracted
+	open website, copy table with mouse/KB
+	then you tell the bot what to do by field
+	
+	Cachelle: you can get certification with the company, or can you just train to learn the bot?
+	Brianna: it's a combo; different certifications available
+	they walk you through videos, you gotta get a 70% or so to get a badge
+	REAL certifications take 40-80 hours, more complicated questions, need higher grades, not super expensive
+	[free for my company]
+	Certified Advance Professional is what I've done
+	Master is super long and has an interview, haven't done it  yet
+	most badges are free, can access even if you're not with the company
+	
+	Cachelle: if you're trying to build a system, using lots of data from other people
+	can it make a business system based off of that?
+	like needing everyone's information at a certain time?
+	Brianna: can definitely do that; we're working on different types of solutions
+	biggest focus is healthcare right now
+	also working with Mass. unemployment to process claims
+	"what do you do day-to-day?"
+	anything that doesn't require mental skills [tracks mouse movements, clicks]
+	also has triggers like new email [scans subject line]
+	if it has "RPA training course" it runs through the loop
+	if you remember CIS280, we do a lot of that here!
+	never thought I'd be doing it that much but we do it a lot here [someone tell Firas]
+	
+	Brian: stuff for "quiet" bots? not just UI stuff?
+	Brianna: yup, they have IQ bot and some other projects to do stuff like that
+	natural language processing, stuff like that
+	JavaScript, Python scripts, etc.
+	
+	tries to be as user friendly as possible, especially for people without coding
+	"this is what the human does, this is what we want our bot to do"
+	
+	Scott: how did you get this internship?
+	Brianna: I applied for a bunch, got one on Zip Recruiter (technical projects)
+	wasn't really DSC but it was interesting, they asked me to stay on full-time after
+	
+	Scott: masters? Brianna: yes
+	Bri: pay?
+	Brianna: startup so not much, but I get 5% of the company
+	
+	Scott: automating grading of homework would be neat!
+	Brianna: I'm actually doing something like that!
+	
+
+Project updates!
+
+Ziyu:
+built site for the data for a temporal slider from Mar 2020 to present
+seems like a heat map?
+using HTML, CSS, JavaScript
+
+	Scott: is there a data file?
+	Ziyu: yup, has each day for each state; death vs. deathConfirmed
+	death includes unreported or possible
+	have a graph of the results but trying to get it into the program using the framework
+	need to figure out how to display stuff meaningfully[? I missed this]
+
+	Scott: may be worth asking other professors about seeing if they have any interest
+	Ziyu: I'll be talking to Dr. Yan after this semester probably
+	
+
+Brianna:
+after getting email; talked about bi-cancer stage, cause of death
+made request for specific data set due to inclusion of personal data
+approved but need to sign agreement to avoid misuse
+need signed from someone of authority
+prof. couldn't do it maybe? tried to contact Dean but no answer
+
+	Scott: provost maybe? lemme think
+	basically find the person most responsive to emails
+	probably Ram
+	
+	
+Hunter:
+having trouble with R stuff,
+can't install EBImage, BiocManager?
+
+	Scott: https://uvastatlab.github.io/phdplus/installR.html
+
+
+Nick:
+Cachelle:
+[missed both]
+
+
+Bri:
+I forget
+- quick look at noise removal, no real progress
+- got sick of rotations
+- dictionary comparison method
+-- idea is that some fonts are just completely unreadable, even to humans
+-- 

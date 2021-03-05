@@ -1,0 +1,206 @@
+dsc499_meeting_week5_02-17-21
+
+guest speaker!
+
+meant to be a glimpse of life after graduation (easy or hard? how to do it? etc.)
+
+today's speaker:
+aramesh2@umassd.edu
+with City Hub
+
+- very difficult to get a job at peak of COVID! oof
+- keep applying, never stop
+- easy to get demotivated when you get poor/little feedback
+- make sure your area of interest is ____
+- practice a lot with websites like leetcode.com, hackerrank, something else?
+- basically just practice projects, try kaggle
+
+most interviews will have technical screening
+some will ask questions, some will be watching live
+some recording, some will have you do it and ask to submit it later
+LinkedIn helps a lot, indeed, some other places like handshake, dice
+I hope Scott's writing these down
+
+internships help a LOT
+try to get one while in school
+
+networking! get on LinkedIn and make as many connections as you can
+be a part of any possible workshop or fairs, get involved, the usual
+
+	Scott: how do you use LinkedIn? I'm not on it
+	A: find groups related to data science, recruiters, etc.
+	even if you can't get a job, you can get guidance on how to improve
+	resume or focus on skills
+
+can be very intense, multiple rounds in terms of interview process
+
+	Scott: any companies care about projects, conference talks, etc.?
+	A: they mostly focus on the projects you've done that utilize the skills
+	they're looking for
+	Scott: did anyone ask about COVID-19 research?
+	A: yup!
+	
+	Cachelle: any mentors or guidance?
+	A: not really, went through a big learning process,
+	had to just kinda find my way to get the job I applied for
+
+	Scott: any university resources?
+	A: not really, forgot to contact them or use them actually
+
+	Cachelle: mentors for professional setup? like 401k setting up, team building, etc.?
+	A: not one person, but everyone on the team has been pretty helpful
+
+
+next is GitHub stuff
+
+if you're interested in grad programs here, we can get someone to talk about it
+
+first topic talks: one by Scott!
+- meant to be informal, not a "here's how to be an expert"
+- should just be a "oh that's neat" thing that inspires people to look into something
+- picked something he knew about, future talks can be about anything relevant
+- aiming for 15 mins
+
+GITHUB ACTIONS
+look at the top bar where it says Actions (lil play button next to it)
+that's what we're talkin about today
+
+how to use em?
+	git clone https://github.com/sfield17/hello-action
+
+actions: something that happens in your project
+- issues, pull requests, etc.
+"your code needs fixing!" as an issue could trigger an action
+- someone updates a database and you want to regenerate model/website to reflect
+- someone pushes a new feature and check for a code bug, alert them if it's honked
+- AND MANY MORE
+
+simple Hello World actions
+	see .github/workflows and check the .yml files
+
+YAML: YAML Aint Markup Language (yes it's a recursive name)
+config file, better than ugly JSON and old ini files
+parsed by github and used to control behavior,
+supposed to be self-descriptive
+
+
+hello-action/.github/workflow/greetings.yml
+	name: Greetings
+
+	on: [pull_request, issues, push]
+
+	jobs:
+	  greeting:
+		runs-on: ubuntu-latest
+		steps:
+		- uses: actions/first-interaction@v1
+		  with:
+			repo-token: ${{ secrets.GITHUB_TOKEN }}
+			issue-message: 'Message that will be displayed on users'' first issue'
+			pr-message: 'Message that will be displayed on users'' first pr'
+
+sends an email to whoever makes the code
+tons of actions with templates already available on GitHub
+
+name: just a name
+on: list of commands that trigger the action (e.g. push)
+
+jobs: basically functions
+[job-name]: just a name
+runs-on: condition for job to activate
+
+when it works, an email will be sent to ye
+
+python checks for test_[function]():
+automatically tries them when they're discovered with pytest [filename.py]
+
+
+main thing:
+if you have a github project, you have github actions already, nothing special
+all you gotta do is make a .github/workflows/ folder
+add them yamls into em
+
+next week is Brianna
+if no one signs up, Scott's gonna auto-pick em
+
+
+
+project updates
+
+Brianna:
+estimates of average life expectancy after diagnosis?
+5 years after diagnosis
+but this is flawed relative to the age survival rate
+- 80 year old diagnosed with cancer is likely to die anyway
+
+finding one solid report that has everything is unrealistic
+finding a bunch of smaller reports and comparing is possible
+
+looked at cancers in children; case rate, survival rate, 5yr survival, etc.
+- apparently I helped! cool
+
+
+Cachelle:
+worked on site, got ideas from Bri (cooool)
+	Scott: any data sets? [couldn't hear due to a vacuum]
+	Cachelle: not yet [I think]
+	Scott: I'm happy to suggest data sets if you need em
+	Cachelle: focused more on feeding in original data sets
+
+
+Jimmy:
+looked online for some data set (forgot the name), couldn't find it
+war? https://en.wikipedia.org/wiki/Wins_Above_Replacement
+	Scott: is there a simple function for this?
+	Jimmy: bunch of stats combined
+	Scott: hard to derive defensive stats
+	if we can get something like WAR1 or something
+	apparently there's a bunch of definitions for it
+also got set up with Tableau, still going through tutorials
+didn't use BDC video (sorry Ben)
+	Marco: there's a WAR database, one even in the lahman package in R
+	http://www.seanlahman.com/baseball-archive/statistics/
+	check this out for more info
+	alternatively an external one unrelated to lahman:
+	https://www.reddit.com/r/baseball/comments/26fd78/how_to_download_raw_data_for_war_from/
+	might not match up, but still could be useful
+	
+	Scott: https://www.baseball-reference.com/data/war_daily_bat.txt
+	Marco: might be more work doing this one way or another
+
+
+Marco:
+introduction to neural networks
+did two things:
+- basic NN intro and replication
+- tensorflow examples
+idea is to get the computer to act like a brain
+neuron: has input/ouput (might not always output)
+neuron is just a node, so really just a node network
+basic idea is to have input info
+group of nodes as a layer, associated in some way
+that layer can go to another layer or right to output
+organize layers vertically
+	(google neural network and look at the images)
+comparisons to eyeballs interpreting light going through to the brain
+something like compare height+weight and guess if male or female
+not necessary that everything is connected to everything
+	(typically they are; think (-inf,inf) mapped by region)
+
+stochastic gradient descent
+y = b0 + b1x1 + b2x2 + ...
+regression, etc.
+same thing but with an activation function that maps values to another
+basically put an f around the function (so a nested function I guess)
+
+idea is to converge on a minimal error over time
+gonna keep practicing
+
+
+Bri:
+went over review email
+- March includes optional items that may be pushed back to keep Feb stuff on track
+- working on development of further analysis tools
+-- levenshtein method used in last semester's script to evaluate word accuracy
+-- previous method evaluated individual bitplanes, can include combined
+-- evaluation of rotational/skewing methods mathematically

@@ -1,0 +1,27 @@
+FOR PULL REQUEST:
+
+step 1: click "Fork" button, Fork that repository to your account
+	this makes your own copy of the entire repository
+step 2: clone that sucka
+	so you can modify it! duh, now get to fixin
+step 3: git checkout -b branch-name-goes-here
+	this makes it a branch, remember the branch name!
+step 4: modify whatever
+	can compare with git diff or view with git status
+step 5: git add [changes]; git commit -m "message goes here";
+	just like a regular push because it IS a regular push
+step 6: git push origin branch-name-goes-here
+	github recognizes new branch
+step 7: click "Compare & pull request" button
+	should open up a new pull request with a message box; use it!
+step 8: wait for owner to care
+	owner will get a pull request to compare
+
+IF YOU'RE THE OWNER:
+step 1: click "Merge pull request" if everything looks good
+	may vary depending on conflicts
+step 2: that's it
+	the pull request should update the original!
+
+Video:
+https://www.youtube.com/watch?v=rgbCcBNZcdQ

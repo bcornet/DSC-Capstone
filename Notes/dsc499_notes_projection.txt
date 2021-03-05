@@ -25,8 +25,9 @@ in reality:
 
 
 
+rotation_spacing.py uses Radon transform
+unproject_text.py uses Hough transform
 
-unproject_text uses Hough transform
 
 
 

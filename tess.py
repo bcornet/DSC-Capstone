@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pywt
 import re
+import cv2
+import levenshtein
 
 try:
     from PIL import Image, ImageDraw, ImageColor
@@ -15,7 +17,8 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 #s = pytesseract.image_to_string(k)
 #print(s)
 
-L = ['test.png','fft.png','acnh.png','acnh.jpg','mhgu.jpg','acnh2.png','acnh3.png','mhgu2.png','mhgu3.png']
+L = ['test.png','fft.png','acnh.png','acnh.jpg','mhgu.jpg','acnh2.png','acnh3.png','mhgu2.png','mhgu3.png',
+'mhgu3-1.png','mhgu3-2.png','mhgu3-3.png','mhgu3-4.png','mhgu3-5.png']
 invL = []
 img = {}
 text = {}
@@ -24,6 +27,8 @@ for i in L:
     print('========%s======='%i)
     try:
         img[i] = Image.open(i)
+        if img[i].mode == 'RGBA'
+            img[i] = img[i].convert('RGB')
     except:
         print("ERROR: Can't find file '%s' probably"%i)
         print('========done!========')
@@ -102,9 +107,10 @@ def showChars(n = 'test.png',color = 'blue'):
     S = [i.split(' ') for i in chars[n].split('\n')[0:-1]]
     for i in S:
         t = [int(j) for j in i[1:-1]]
-        print(i)
+        print(i,"pos at %d,%d,%d,%d"%(t[0],h-t[1],t[2],h-t[3]))
         test.rectangle((t[0],h-t[1],t[2],h-t[3]),outline=c)
     k.show()
+
     
 def showWords(n = 'test.png',color = 'blue'):
     global words
@@ -128,8 +134,11 @@ def showWords(n = 'test.png',color = 'blue'):
 
 #2**np.array(range(8))
 
-def bitplanes(n = 'test.png'):
-    p = colorsplit(n)
+def bitplanes(n = 'test.png', csplit = True):
+    if csplit:
+        p = colorsplit(n)
+    else:
+        p = np.array(img[n])
     bp = []
     for i in range(8):
         bp.append(((p & 2**i) > 0)*255)
@@ -194,10 +203,15 @@ def bitplanes8(n = 'test.png'):
         ax.set_yticks([])
     fig.tight_layout()
     plt.show()
-    
 
-def bitplanes24(n = 'test.png'):
-    p = bitplanes(n)
+
+
+def bitplanes24(n = 'test.png', csplit=True):
+    p = bitplanes(n,csplit)
+    if csplit:
+        numsplit = 3
+    else:
+        numsplit = 1
     S = np.vsplit(p,8) # S is 8 bitplanes for the three colors stacked
     titles = ['1st','2nd','3rd','4th','5th','6th','7th','8th']
     colors = ['Red','Green','Blue']
@@ -205,15 +219,17 @@ def bitplanes24(n = 'test.png'):
     hex = ['0x01','0x02','0x04','0x08','0x10','0x20','0x40','0x80']
     fig = plt.figure(figsize=([12,4.5]))
     dat = {}
-    checkem = n == 'acnh2.png'
+    #checkem = n == 'acnh2.png'
+    checkem = 'mhgu3-3' in n
     if checkem:
-        compare = 'Acanthostega\nAmber\nAmmonite\nAnkylo skull\nAnkylo tail\nAnkylo torso\nAnomalocaris\nArchelon skull\nArchelon tail'.split("\n")
+        #compare = 'Acanthostega\nAmber\nAmmonite\nAnkylo skull\nAnkylo tail\nAnkylo torso\nAnomalocaris\nArchelon skull\nArchelon tail'.split("\n")
+        compare = ['Snowbaron X']
     for i, a in enumerate(S):
-        V = np.hsplit(a,3) # V is one of the 24 individual bitplanes
+        V = np.hsplit(a,numsplit) # V is one of the 24 individual bitplanes
         dat[i] = {}
         for j, b in enumerate(V): # bitplane order: R[0...7],G[0...7],B[0...7]
             ind = i + j*8
-            ax = fig.add_subplot(3, 8, ind + 1)
+            ax = fig.add_subplot(numsplit, 8, ind + 1)
             ax.imshow(b, interpolation="nearest", cmap=plt.cm.gray)
             if i == 0:
                 ax.set_ylabel(colors[j], fontsize=10)
@@ -389,47 +405,21 @@ def dwt(p):
 
 
 
-def levenshtein_ratio_and_distance(s, t, ratio_calc = False):
-    """ levenshtein_ratio_and_distance:
-        Calculates levenshtein distance between two strings.
-        If ratio_calc = True, the function computes the
-        levenshtein distance ratio of similarity between two strings
-        For all i and j, distance[i,j] will contain the Levenshtein
-        distance between the first i characters of s and the
-        first j characters of t
-    """
-    # Initialize matrix of zeros
-    rows = len(s)+1
-    cols = len(t)+1
-    distance = np.zeros((rows,cols),dtype = int)
 
-    # Populate matrix of zeros with the indeces of each character of both strings
-    for i in range(1, rows):
-        for k in range(1,cols):
-            distance[i][0] = i
-            distance[0][k] = k
+        
+        
+def threshold(img):
+    
+    if len(img.shape) > 2:
+        img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
 
-    # Iterate over the matrix to compute the cost of deletions,insertions and/or substitutions    
-    for col in range(1, cols):
-        for row in range(1, rows):
-            if s[row-1] == t[col-1]:
-                cost = 0 # If the characters are the same in the two strings in a given position [i,j] then the cost is 0
-            else:
-                # In order to align the results with those of the Python Levenshtein package, if we choose to calculate the ratio
-                # the cost of a substitution is 2. If we calculate just distance, then the cost of a substitution is 1.
-                if ratio_calc == True:
-                    cost = 2
-                else:
-                    cost = 1
-            distance[row][col] = min(distance[row-1][col] + 1,      # Cost of deletions
-                                 distance[row][col-1] + 1,          # Cost of insertions
-                                 distance[row-1][col-1] + cost)     # Cost of substitutions
-    if ratio_calc == True:
-        # Computation of the Levenshtein Distance Ratio
-        Ratio = ((len(s)+len(t)) - distance[row][col]) / (len(s)+len(t))
-        return Ratio
-    else:
-        # print(distance) # Uncomment if you want to see the matrix showing how the algorithm computes the cost of deletions,
-        # insertions and/or substitutions
-        # This is the minimum number of edits needed to convert string a to string b
-        return "The strings are {} edits away".format(distance[row][col])
+    mean = img.mean()
+    if mean < 100:
+        img = 255-img
+        
+    return cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_MEAN_C,
+                                 cv2.THRESH_BINARY_INV, 101, 21)
+                                 
+
+
+

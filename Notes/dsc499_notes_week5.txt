@@ -1,0 +1,25 @@
+Scott Field
+Wed 2/17/2021 7:48 PM
+Hi Brian,
+
+  So my question was about how/why you will measure distances between words. Is this...
+
+*  to check how well the rotating/skewing algorithms are working? Or some other aspect in particular 
+*  to attempt to autocorrect any mistakes in the identification of letters. 
+*  Since you are trying to infer character font, will this be part of the "distance"?
+
+Also, I was wondering if the skewing method you found on python is still the one you will use? From the previous week I seem to recall it didn't work on than standard example. 
+
+Scott
+
+
+
+Brian Donald Cornet
+Wed 2/17/2021 8:18 PM
+Scott,
+
+The Levenshtein distance method is used to analyze the effectiveness of any given transformation by comparing the OCR result against the actual text string (the ol' y vs. y-hat). In my final report from 498, I had a picture towards the end that uses it to compare the effectiveness of splitting an image into 24 bitplanes. My intent was to use this to verify optimal transforms to aid in deciphering images with heavier noise and distortion and, time permitting, an auto-correct function with a user-prepared dictionary. If nothing else, it's at least evidence that significant bits are... significant.
+
+For the skewing method, I've been breaking down the algebra behind the transform as provided on the readme page to make sense of where it's going wrong. If I get completely sick of it (i.e. run out of time), I'll look around for other examples. The page itself linked to a 2015 paper that used a faster device, so worst-case scenario is I try it with my mighty 2018 laptop or hop onto AWS. Or maybe the worst-case scenario is some sort of recursion with backtracking blind transform across a 90-degree interval, we'll see.
+
+- Brian

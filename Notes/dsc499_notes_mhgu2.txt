@@ -1,0 +1,157 @@
+  0    Orientation and script detection (OSD) only.
+  1    Automatic page segmentation with OSD.
+  2    Automatic page segmentation, but no OSD, or OCR.
+  3    Fully automatic page segmentation, but no OSD. (Default)
+  4    Assume a single column of text of variable sizes.
+  5    Assume a single uniform block of vertically aligned text.
+  6    Assume a single uniform block of text.
+  7    Treat the image as a single text line.
+  8    Treat the image as a single word.
+  9    Treat the image as a single word in a circle.
+ 10    Treat the image as a single character.
+ 11    Sparse text. Find as much text as possible in no particular order.
+ 12    Sparse text with OSD.
+ 13    Raw line. Treat the image as a single text line, bypassing hacks that are Tesseract-specific.
+
+
+image_to_data(img['mhgu3.png'], config='--psm 7')
+
+
+
+character positions:
+
+h is the image height
+t[0],h-t[1],t[2],h-t[3]
+
+
+
+
+
+
+for splitplanes:
+R
+G
+B
+RG
+RB
+GB
+RGB
+
+
+img['imhgu3-3.png'] = ((img['inv_mhgu3-3.png'].copy() & 128) > 0)*255
+
+img['imhgu3-3.png'] = (((np.array(img['inv_mhgu3-3.png'].copy()) > X) > 0)*255).astype('uint8')
+print(pytesseract.image_to_string(Image.fromarray(img['imhgu3-3.png']),config='--psm 7')[:-2])
+Image.fromarray(img['imhgu3-3.png']).show()
+
+print("Start!")
+for X in range(256):
+    gt[X] = pytesseract.image_to_string(     (((np.array(img['inv_mhgu3-5.png'].copy()) > X) > 0)*255).astype('uint8'), config='--psm 7')[:-2]
+    if (X / 16) % 1 == 0:
+        print("Completed %d of 255..."%X)
+print("Done!")
+
+for k,v in gt.items():
+    if v.lower() in ["oo-",'oo—']:
+        print(k,v)
+
+
+CORRECT!
+"Snowbaron X" in third col:
+# 170
+# 172
+# 173
+# 176
+
+"Sheathing" in first col:
+# 117 to 123
+# 129 to 131
+# 140 to 143
+# 145
+# 148 to 150
+# 152 to 154
+# 164 to 174
+# 176
+
+"+10" in second col:
+# tons of em, including the Snowbaron range
+
+"+1" in fourth col:
+# also tons, includes 170 to 174 but not 176
+
+
+
+Image.fromarray(((np.array(img['inv_mhgu3-3.png'].copy()) & 128) > 0)*255).show()
+
+pytesseract.image_to_string(((np.array(img['inv_mhgu3-3.png'].copy()) & 128) > 0)*255)
+
+
+
+use inverted image for MHGU
+try separating by block
+will need to see highlighted row (top row of mhgu2.png: "Sharpness", "+5", "Critical Up", "+4", "ooo")
+
+30 high for highlighted row (image is 287 high, so about 32 per item)
+31/32,63/64,95/96,127/128, etc.
+[0,32,64,...]
+[31,63,95,...]
+
+horizontal dividers at 111/112,149/150,261/262,300/301
+
+starts=[0,112,150,262,301]
+ends=[111,149,261,300,359]
+
+testX = {}
+for X in range(170,177):
+    doot = (((np.array(img['inv_mhgu2.png'].copy()) > X) > 0)*255).astype('uint8')
+    d = {}
+
+    for i in range(9):
+        d[i] = {}
+        for j in range(5):
+            d[i][j] = pytesseract.image_to_string(doot[i*32:31+i*32,starts[j]:ends[j],:], config='--psm 7')[:-2]
+            print("%s: %s"%((i,j),d[i][j]))
+    testX[X] = d
+
+pytesseract.image_to_string(     (((np.array(img['inv_mhgu3-5.png'].copy()) > X) > 0)*255).astype('uint8'), config='--psm 7')[:-2]
+
+
+
+"Critical Up" being read as
+"Crticol Up"
+"Ceticol Up"
+
+"Crit Draw" being read as
+"Crk Drow", "Cr Drow", "Cri Drow"
+
+"Chain Crit" being read as
+"Choin Grit"
+
+ti = {
+0: ["Sharpness","+1","Critical Up","+4","ooo"],
+1: ["Blunt", "+2", "Critical Up", "+5","oo-"],
+2: ["Crit Draw", "+5", "Chain Crit", "-1", "ooo"],
+3: ["Sheathing","+10","Snowbaron X","+1","oo-"],
+4: ["Sheathing","+9","Sharpness","-4","ooo"],
+5: ["Sheathing","+5","Expert","+10","o--"],
+6: ["Sheathing","+5","Tenderizer","+4","o--"],
+7: ["Sheathe Sharpen","+10","Dreadqueen X","+2","oo-"],
+8: ["Sheathe Sharpen","+7","Expert","+8","oo-"]
+}
+
+
+
+for k,v in testX.items():
+    print("%s vs. %s: %f"%(mhgu[,v[2][2],levenshtein_ratio_and_distance(tx,v[2][2],True)))
+
+
+
+https://mhgu.kiranico.com/skill
+
+
+df = pd.DataFrame(some_list, columns=["Skill"])
+df.to_csv(fileName, index=False)
+
+
+
+

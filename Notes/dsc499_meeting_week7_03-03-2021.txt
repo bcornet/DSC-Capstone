@@ -1,0 +1,493 @@
+DSC 499
+
+Nick:
+cleaning a big file
+a very big file!
+that's all
+
+	Scott: any histograms or plots?
+	Nick: still in the middle of cleaning up, so not yet, sorry
+
+
+Michelle givin a talk!
+
+- graduated last year, diploma sitting on a thing on a shelf because COVID
+- COVID definitely made things... "interesting"
+
+
+worked on linkedin, indeed, met with friends/recruiters
+got a couple of offers but not in math/data fields
+- these may be scant, maybe because of shift to remote
+
+out of the blue, a recruiter saw my thing and scooped me up
+
+IHS -> Dodd-Frank something
+contracted by bank of Nova Scotia, check accounts that were being traded
+to ensure that they were compliant with Wall Street regulations in US
+
+hired pretty quickly since they needed someone quick
+interview was short and sweet, basically "you know excel" and I'm like "yeah duh"
+
+got the job but the project was a mess from the start
+Scotiabank didn't know what they wanted
+so they just dumped stuff on us
+"sort this" "why" "dunno, just sort it"
+went through giant excel sheets with 5 people
+"does this one work" "does this one"
+we all hated it
+
+I was the only person on the team with a math background
+or any kind of programming
+instead of doing my portion, I'd tinker in excel
+making scripts to help make pulling info easier
+really annoying looking for the same info over and over again
+never quite figured out macros but I figured out a simple chain of formulae
+that managed to put everything into one table
+
+that was neat and the team was great but the experience was hellish
+management was not on our side; would've been nice but the bank didn't know what they had asked of us
+made impossible demands that our bosses didn't push  back on sufficiently
+if I raised concerns, I typically got shut down
+so I started going around people like bank employees
+management basically said "NO TALKING TO EMPLOYEES EVER"
+trying to get IHS team seperate from Scotiabank team
+we never reached out to them but they contacted us all the time	
+
+	Scott: regulation purposes or what?
+	Michelle: so we could "focus on our work" or nonsense
+	"lawyers went over it and you all agreed" "yeah because we had no idea what we were getting into"
+	redid everything
+
+only lasted as long as I did because of the people I was with
+when you're suffering together, you get through it!
+
+ended up quitting after 5 months, was contracted for a year
+totally not worth the mental agony 
+being in a constant state of fight or flight for 8 hours before adrenaline crash
+
+while in my job (where everyone told me to quit), I looked for other jobs
+found something on... maybe Handshake? I can't remember
+saw an application for PoC in STEM called hack.diversity
+division of new england venture capital association
+founder was like "Boston tech companies are innovative and super important"
+"always looking for talent and diverse talent"
+"we should bring smart kids of color into a group, then train them with specific skills"
+for PoC in STEM in Boston area
+don't necessarily need to be a PoC
+	Scott: have to be in Boston?
+	Michelle: normally yeah, but not right now obviously
+scaled up massively: had 15 last year, 102 this year
+LARGE group!
+pick a track [I got a text and missed some stuff]
+De-Hackathon! a thing
+get an internship at host companies: there's 27  of them!
+PITCH WEEK!
+companies come in and tell us why we should work for them
+- culture, interviews, what they do, etc.
+- we apply at the end
+always a ton of software engineers!
+that's where most of the roles are
+some data companies
+I'm interested in pharma companies
+they deal with a lot of data, looking for people to help with the analysis of data
+companies:
+	tango therapeutics (startup) - gene therapies for cancer
+	vertex (very large) in boston
+all of the companies are HQ'd or based in Boston
+	hubspot
+	vistaprint
+	liberty mutual
+	rapid 7
+	pargaruze
+	bagen gasdfjasdkf
+	athena health
+	(there's a lot)
+lots of startups looking to recruit diverse talent
+hack.diversity is giving us the talent and opportunities
+
+	in pitch week?
+	yup, right now we're getting pitches
+	yesterday was a pretty good group, I only caught the first hour
+	but they were all offering data roles too which was great!
+
+what's interesting is the diversity of roles that fall into data analysis
+rapid 7 is a cyber security: their analysis is different from what vertex does for example
+like vertex is looking for people knowing Microsoft power BI or Oracle BI
+and tango is looking for people with python skillz
+the range of skills is very different!
+
+salsify wants ruby or javascript or AWS skills
+probably more
+interesting spread of data analysis
+very different from what I was doing
+
+	scott: anyone asking for excel?
+	Michelle: so far no, I don't know about next few days
+	only two more days after today, half way through
+	but it remains to be seen
+	
+for the most part, the resources they give us for learning and building
+pluralsight: linkedin but specifically for tech
+can make accounts but it's not free
+most of the time they're partnered through a company (like how UMD is in linkedin)
+they're hiring us knowing that we WON'T  have the skills, so they'll provide the way to learn as we go
+AWS (teaching platform), costs money, might need an invite?
+cloud computing is weird to me but it's an impressive skill
+a lot of companies are really impressed with AWS skills since so much of it is done via cloud
+
+	Scott: do any of our courses teach AWS?
+	Michelle: not that I know of
+	Bri: BDC had a thing on it a few weeks ago
+	Michelle: I think you can do it through an institution so UMD could set something up
+
+hack.diversity posts all the companies publicly
+part of your application is you have to write a little "about me" thing
+they post that on medium, yeah that was fun
+they do have workshops and pod meetings every week to talk different topics
+last week: how to beef up a linkedin profile
+here's a thing about linkedin: you get a lot more profile views when you actually have a job!
+
+crafting it perfectly and getting like 13 without a job
+then getting 60 a week with a job now
+
+https://www.hackdiversity.com/partners
+
+
+job hunting SUCKS
+	Scott: some people send like 10, 20, 30, rapid fire until they get something
+	Michelle: I was working with three different recruiters from 3 different agencies
+	they're helpful, they have inside leads and they get paid by their own companies
+	but contract work can be sucky and tricky
+	you're not a full-time employee, not given the same benefits
+	keep that in mind if you go that route
+	recruiters are definitely helpful in getting leads and directions
+	but you don't necessarily have to follow through with what they provide
+	you can turn them down and whatnot
+	Scott: how'd you find your three?
+	Michelle: one recommended by a friend
+	other two found me on linkedin
+	the IHS one cold messaged me with "saw your profile, you look like a good fit"
+	Scott: so if you're on linked in, they'll find you
+	Michelle: yup, helps to have a robust profile
+	don't need to be active, but it's good to basically have a resume on there
+	list all the things you've done
+	even if it's not work, like academic experience
+	while I was at UMD, I was doing research with Dr. Fisher in physics dept.
+	that definitely helped me improve my python skills because of all the work and imaging stuffs
+	so I'd say "this is where my python experience comes from"
+	along with courses and what I've taken and blah blah blah
+	Cachelle: another tip that one of my friends did:
+	if you're applying for a job, you can email a recruiter
+	still connected through the database
+	also shows initiative saying you want the job
+	also also should put things that inspire you
+	like data science/analysis things you want to do
+	gives the recruiter a summary of who you are, what you wanna do
+	they can go through your profile and figure out what you wanna do
+	keep your resume on there; if you're still in the university, put that on there
+	diversity? I can't hear
+	point is they care about collaboration, initiative, teamwork, etc.
+	ability to create solutions even if you don't have em
+	one of my classes kept mentioning this guy:
+	he was on linkedin multiple times, he got a job and now he's a director for some agency, I forget
+	Jules Ferendez?
+	basically you have to be hungry and get the work
+	I know I'm blabbing on a lot but those are some basics
+	Michelle: also post your school projects!
+	if there's a project that you're working on that you're particularly proud of,
+	throw that link up there!
+	build a portfolio!
+	take some initiative outside of assignments!
+	last semester/year, we didn't come back after spring break
+	some of the assignments we didn't have the time to come back to
+	even after I finished classes, out of interest I checked a thing
+	analyzing the DNA sequence of a virus, what mutations indicate its... maliciousness? malevolence? whatever
+	that was just something I was working on by myself in my spare time when not crushing my soul looking for work
+	haven't even finished it since I got a job and ran out of free time
+	good way to practice R skill and something to talk about in an interview
+	something I did for fun that also contributes to skill and initiative taking
+	YEAH
+	Scott: if you mention that you do R for fun in your spare time, you'll probably get hired!
+	Michelle: something I haven't experienced in my career:
+	technical aspects that hack offers
+	tech interview
+	for the data side, they'll give you a problem that they'll ask you to work through
+	sometimes you won't be able to reasonably solve it in the time given
+	what they want is to see your thought process of how to approach
+	(DESIGN!)
+	what's blocking you, what you need help with, how to get around
+	granted I haven't experience a tech interview but based on the companies that have pitched to us,
+	a tech interview is not so much an assignment so much as a "we wanna see how you think as an analyst/engineer/etc."
+	
+thanks for coming! dodd-frank seemed important but maybe not
+lots of "why did we have to do this?" "because it's the law"
+"WELL OTHER BANKS DIDN'T MAKE US DO THIS"
+well it's a Canadian bank so
+banks usually have more lawyers, bleah
+
+gotta go! listen to your professor!
+might randomly meet him at a rest stop in New Jersey [yes that happened]
+also his wife is nice
+
+
+BACK TO TALKS AND UPDATES
+
+left off with Nick's update
+
+
+MARCO'S TOPIC TALK!
+
+LaTeX, Markdown, and Workflow
+writing documents and how it relates to what you do
+
+LaTeX: doc preparation system for HQ type-setting
+like word but finer control
+YES IT'S PRONOUNCED LAY-TECH, NOT LAY-TEX
+
+adopted by Overleaf, check it out yo
+can do math notation and languages
+encoded as controllable language; usually a library for what you need
+works in relation to coding when taken lightweight
+lightweight can improve workflow! easier
+
+can throw in stuff like THEOREM or REMARK
+got a bunch of linked resources
+
+can just make an account on Overleaf to try stuff
+
+Markdown: another language used in IDEs like Jupyter
+for R studio, you need to install TeX
+I use TinyTex, you just install and go
+can do other stuff
+
+R-Markdown: .rmd file
+it ENCAPSULATES things into blocks (chunks)
+kinda like Jupyter notebook but as a single text file
+
+$$\sum_{i=1}^{a}
+
+	Scott: this is R markdown?
+	Marco: yup, lets you write out your code
+	you can be writing LaTeX while writing code
+	typically people do their code and plop it in Word
+	if you wanna do that, you can export it in Word too
+
+the knitr thing puts it all together
+put in "include=FALSE" to hide a chunk
+do "echo = TRUE" to show the code
+can actually connect it to Git and work simultaneously
+
+if you have Git, you can use it from the directory
+if you wanna use the link, you can use the URL
+
+can open a file like anything else
+can pull/push/etc. from here directly
+
+	Scott: has R studio supported this for a long time?
+	Marco: I dunno but at least 3 years
+	I like it because it combines everything into one
+	you can code and write at the same time
+	if you wanna get a rough doc going, use R markdown and knit it
+	if you wanna do something HQ, take it over to latex
+
+[shows how to use it with GitHub, yes it works]
+
+(I think that's it)
+	any comments on markdown in Jupyter?
+	(maybe!)
+	Scott: so many versions of markdown, everyone has their own extensions
+	it doesn't even formally recognize latex
+	one thing that annoys me with bitbucket, they don't recognize latex
+	Marco: yeah you can in R at least
+	regarding Jupyter
+	
+colab.research.google.com/drive/ ?
+
+google collab is like any other google thing (slides/doc)
+basically a shared notebook for coding python
+
+	Scott: a tangent I forgot
+
+can knit this; haven't done it
+I wasn't impressed honestly
+can you use latex? don't know, haven't tried, don't think so
+
+	Cachelle: problem with R markdown
+	knitting cancels if you have an error with your code
+	Marco: it tries to push it through
+	if there's a real compile error, it stops
+	Scott: you're saying the behavior changes?
+	Cachelle: yeah
+	Scott: could be some behavior thing with the script
+	Marco: yeah I usually keep it in one spot so I dunno
+
+
+DONE!
+
+
+Regular Marco update:
+oh hey it's the markdown page I just had
+
+last time we talked NN neural networks
+I moved on to CNN (convolutional neural networks)
+same idea but now we use convolution
+what's the advantage?
+
+particularly nice for images; image processing technique
+nice when you have very large images for example
+like 224x224x3 for an RGB (150000-ish bytes)
+does a good job with handling invariance
+if the image is slightly changed, it's not lost
+
+CONVOLUTION:
+takes an eleemnt-wise multiplication 
+can pad with zeros for shape
+
+	Scott: looks like a 4x4 becomes a 2x2
+	does the +29 mean anything significant?
+	if you put the blue box in the upper-left,
+	it straddles the edge
+	blurring an image is an example of convolution
+
+[I am so tired]
+
+pooling: min/max, doesn't overlap domain
+
+softmax:
+
+e^(x_n)/SUM[i=1,n]e^(x_i)
+[28x28] conv -> [26x26x8] maxpool -> [13x13x8] softmax -> 10
+
+started coding it manually, will do it with tensorflow
+
+	Scott: you mean you're gonna do the whole thing?
+	Marco: YES
+	Scott: got enough time for that?
+	Marco: should be! I think so anyway
+	Scott: once you're done, are you moving to Keras/TF?
+	Marco: yeah
+	Scott: best way to learn an algorithm is to code it up
+	but 10% of time is coding, 90% debugging
+
+
+CACHELLE:
+ran into some errors with flask, currently debugging
+research about info I might've missed
+"rebugging!" we're all good at that though
+
+checking back-end
+talking to some comp sci majors about web building
+see if there's anything I can do better on
+
+	Scott: see what they're doing, right?
+	Cachelle: yeah since a few are making websites/databases
+	gonna talk to them to get more ideas
+	Scott: is the code available? like on GitHub or anywhere? private possibly
+	Cachelle: oooh not yet
+	Scott: heads up: I wanna check out your code on your gits, can be private
+	doesn't have to be finished or beautiful, I just need to find it
+
+
+BRIANNA:
+trying to find out who can sign the form for that one data access
+	Scott: found it! Andrew Carver (Carburgh? something like that)
+	Brianna: I reached out to Office of Undergrad Research
+	they said they'd sign, I said great!
+	and that was the last I heard from them
+	they said something about "no students!"
+	bein jerks basically
+	I'll do the git thing too
+
+found a study by Yale, liked it
+had four factors for lung cancer in non-smokers
+radon, air pollution, smoking, asbestos, something else?
+
+another: verywell health
+women are more likely to develope non-smoking lung cancer than men
+live 56% longer than curent smokers
+able to tolerate surgery better
+adenocarcinoma is more common for non, squamous for smokers
+
+statnews had a thing, 8% of lung patients from 1990 to 1995,
+became 14.9% from 2011 to 2013
+bigger in UK
+supposedly because of geneticts but I can't access studies
+guess that's it
+
+basically just looking at other studies to see common results
+gonna use that to see if datasets are true
+
+	Cachelle: I can't remember but
+	based off of areas of industry (factory, etc.)
+	has there been a significant rate of lung cancer?
+	Brianna: been able to find rates by state and county
+	those were more dealing with air pollution
+	but not about plants
+	like I live in Plymouth and we gots a big nuclear plant
+	problem is NIH limits it to just the state
+	so it's kinda hard
+	pretty hard to tell in a large state
+	especially in Cali cause of wildfires
+	Cachelle: just something I noticed based on inhalation
+	Brianna: it's also why I've been looking at other countries
+	particularly those with large factories
+	also THIRD-HAND SMOKE
+	lingering chemical residue from previous smokers
+	like on walls and ceilings and flooring
+	that can make people sick too
+	Cachelle: what about insulation/asbestos?
+	Brianna: lots of things to consider
+	hoping to have the dataset by friday
+	can work over spring break
+	
+
+JIMMY:
+worked on putting datasets together
+getting it ready for tableau
+player salary by batting,
+player salary by pitching
+
+trying to figure out how to get column from one table into another
+	sounds like he needs a join
+	Brianna: had to do this in advanced stats with Donghui
+	can you upload that into something
+	Marco: can append if it's ordered the same
+	Bri: try a join
+	Brianna: can also slap it on in Excel
+	Scott: could just map it? can iterate it even if you're lazy
+	could get tableau in the mix too
+
+part 2 is about Tableau, I missed it
+
+
+BRI:
+set up levenshtein matrix to compare similar words
+- idea is to have low values for most terms to avoid improper assignment
+- heat map looks promising, even better when splitting it up by word
+
+first dictionary attempt:
+substitutes each item with closest match from its respective dictionary
+iterates over different thresholds for this image
+
+RESULTS:
+- any empty strings automatically failed; this is expected
+- skill names came out perfectly!
+- 3rd and 4th columns were perfect
+- 8th and 9th rows were perfect
+- no issues with detecting number but struggled with + and - symbols
+- difficulty matching o-- and ooo, didn't test ---, oo- was 100%
+
+
+
+
+HUNTER:
+setting up R packages, it's a pain
+pkg-config not found?
+maybe need to install it
+
+dev tools!
+# install.packages("devtools")
+
+homebrew? x-code? excode?
+doin stuff through console or command line
+
