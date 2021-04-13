@@ -1,0 +1,147 @@
+dsc499_meeting_week8_03-17-2021
+
+RIP spring break
+
+
+HUNTER: Topic talk!
+Demographics and the Economy
+- exploring populations and economics duh
+heatmap for percentage of people in each country living in cities
+
+graph: urbanization supposedly related to decreasing birth rates (R^2 = 0.33 ish, eh)
+
+another map of birth rates as an average by country (rainbow color scheme)
+
+pre-industry context: fewer opportunities to change position, lower life expectency
+industrial revolution changed those
+
+
+urbanization leads to better living conditions, more disposable income/free time, etc.
+leads to children becoming more expensive and declining birth rates
+awesome time flow of Japan's population by age from 1910s to present
+
+solution: France method!
+- make it financially easier to have a child
+- very generous welfare system and healthcare
+- expensive to implement but it definitely works
+started at some point after WW2
+- during German occupation, birth rates started to go up (was lower previously for some reason)
+
+American method! immigration
+- #1 popular destination for immigration
+- may lead to stoppage when source countries stabilize
+
+
+Japanese method! automation
+- needs to rely on robots to overcome lack of workers
+- problem is robots pay no taxes, so no circulation
+
+
+supposedly several countries are past the point of recovering:
+Germany, Russia, Italy, Taiwan, Spain, EU in general, Singapore, Thailand
+
+what defines the point?
+	aging population places a significant strain on the economy
+	#1 reason to not have a child is financial burden
+	growth as a differential equation: fewer base -> fewer kids -> fewer base -> loop
+
+some book both Hunter and Scott heard about:
+https://www.amazon.com/One-Billion-Americans-Thinking-Bigger-ebook/dp/B082ZR6827
+
+says USA should aim for 1 billion people
+
+Russia method: free appliances for having kids (basically like France method)
+https://www.heraldnet.com/news/in-russia-have-a-baby-win-a-refrigerator/
+
+20-year lag from child to tax-paying adult is a factor too
+
+Scott: Andrew Yang talking about taxing robots
+Hunter: no problem has faced this before, Japan will be the first, good luck for em
+also gonna be an interesting century
+
+
+===============
+UPDATES
+===============
+
+BRIANNA:
+finally got access to the data on friday
+going through data still
+not everyone in the trial actually had primary diagnose lung cancer
+- cancer spread from other sources to the lungs
+
+took like 10 minutes to process, cut it down to relevant columns
+smoker, nonsmoker, current smoker, former smoker, etc.
+
+made plots but they're ugly
+made histograms, more interesting
+
+	Scott: big spike at around 1400-ish, maybe from different types of cancer?
+	
+examining correlation studies and linear regression basically
+
+	Scott: look at days-to-death histogram given the stage?
+	Brianna: yes, but it's being dumb, here's the plot
+	pretty equally concentrated aside from stage 2
+
+263 columns, 150k rows or so, all values as numerics
+72.7 MB; smaller than terrorism data set for MTH 522 but we knew what to use for that going in
+
+
+
+JIMMY:
+was super busy so not much to say
+left off with joins and tableau
+question was if we can get regression plots and such working
+will probably go to office hours more
+
+	Scott: I'm no Tableau expert, but I'm okay
+
+
+
+BRI:
+added denoise function with cv2; can also do multi-image from stream
+tested on MHGU image; visible changes in removing noise but not a complete smoothing
+- artifacts from jpeg compression are still present, as are jaggies
+- white text tends to blur with lighter backgrounds (first row, first col)
+
+compared accuracy vs. no denoise on MHGU table with dictionary correction
+- slightly worse accuracy overall, particularly on first row
+- some improvements, notably on detecting empty strings in first col
+
+general conclusion: can apply as an optional transform for empty strings
+otherwise should just be used for camera denoise
+
+
+
+MARCO:
+showing off neural network from his google notebook
+(I'm missing most of this because I'm writing my own thing)	
+
+
+
+NICK:
+not much progress
+still working with SQL
+
+	Scott: maybe drop the SQL part
+	Bri: definitely not needed unless you wanna have a database modified over time on a network
+	anything you can do in R or Python is totally sufficient
+	Scott: considering time limits (2 weeks until April), should probably do that
+	even if an accessible database was part of the original idea, 
+	the actual analysis is more relevant to DSC
+	also you're further along with that, so focus on that
+
+
+CACHELLE:
+went during office hours
+
+HUNTER:
+more R errors
+- R types: lists, collections, so on
+we fixed it!
+now run that sucka
+
+
+
+I gotta peeeee

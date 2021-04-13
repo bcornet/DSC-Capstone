@@ -1,7 +1,7 @@
 # DSC-Capstone
 UMass Dartmouth Data Science Capstone Project - Repository for DSC 498/499 files
 
-**Project:** "Raw Image Scanner" (feel free to come up with an actual name)
+**Project:** Optical Character Recognition and Correction for Images of Digital Displays
 
 **Contact:** [Brian Cornet](mailto:bcornet@umassd.edu?subject=[GitHub]%20I%20clicked%20a%20thing)
 
@@ -25,13 +25,13 @@ I came up with a bunch of project ideas for the capstone, most of which I was ho
 - [x] Implement Levenshtein ratio/distance method
 - [x] Prepare final presentation and report (DSC 498)
 - [x] Implement xy-plane rotation method
-- [ ] Implement xz- and yz-plane skew methods
-- [ ] Implement noise removal method
+- [x] Implement xz- and yz-plane skew methods
+- [x] Implement noise removal method
 - [ ] Implement dilation/erosion methods
 - [ ] Implement border addition/removal methods
 - [ ] Experiment with automating correction methods
 - [ ] Experiment with off-screen text-based images
-- [ ] \(Optional) Experiment with user-defined dictionary support
+- [x] Experiment with user-defined dictionary support
 - [ ] \(Optional) Begin development of image comparison methods
 - [ ] Prepare final presentation and report (DSC 499)
 
@@ -56,29 +56,67 @@ I came up with a bunch of project ideas for the capstone, most of which I was ho
   1. Presentation
 
 ## Topic Talkies
-* Web Scraping with BeautifulSoup
-* Designing Java Software for SQL Databases
-* Writing with LaTeX in Overleaf
-* Making the Most out of Desmos
-* Deciphering Older Data Structures
-* Working with Regex Patterns
-* Quantum vs. Classical in Data Science
-* Data Science for Funsies
+* **Data Science for Funsies**: Emphasizing the importance of using data science *for the fun of it*. This encourages the development of data science skills using real, large data sets that are both interesting and relevant to the data scientist themselves. Advantages such as domain knowledge familiarity, increased focus and motivation, the potential for real benefits from results, and opportunities to connect with other people with similar interests (personally or professionally) through self-expression are also explored.
 
 ## Linky-Dinks
-* [PyTesseract on PyPI](https://pypi.org/project/pytesseract/)
-* [Tesseract OCR on GitHub](https://github.com/tesseract-ocr/tesseract)
-* [Tesseract's ImproveQuality Documentation](https://github.com/tesseract-ocr/tessdoc/blob/master/ImproveQuality.md)
-  * [Rotation Sample from endolith on GitHub](https://gist.github.com/endolith/334196bac1cac45a4893#file-rotation_spacing-py)
-  * [Skewing Sample from mzucker on GitHub](https://github.com/mzucker/unproject_text)
-* [GitGuide on GitHub](https://github.com/git-guides/)
-* [OriginLab Graphing Software](https://www.originlab.com/index.aspx)
-* [Tableau for Students](https://www.tableau.com/academic/students)
-  * [Tableau Tutorial from DSC 201](http://www.cis.umassd.edu/~dkoop/dsc201-2018fa/assignment2.html)
-  * [Tableau Tutorial Video by Ben Pfeffer](https://www.youtube.com/watch?v=2sp3HO3Jzfw)
-* [Regex Cheat Sheet for Python](https://www.dataquest.io/wp-content/uploads/2019/03/python-regular-expressions-cheat-sheet.pdf)
-* [Donghui Yan on UMass Dartmouth](http://www.math.umassd.edu/~dyan/)
-  * [Donghui Yan's DSC 101 Page](https://sites.google.com/site/umassddsc101/)
-  * [Donghui Yan's MTH 331 Page](https://sites.google.com/site/umassdmth331/)
-  * [Donghui Yan's MTH 499/522 Page](https://sites.google.com/site/umassdmth499/)
-* [UMD Big Data Club on GitHub](https://umdbigdataclub.github.io/index.html)
+* Bri's Project:
+  * [PyTesseract on PyPI](https://pypi.org/project/pytesseract/)
+  * [Tesseract OCR on GitHub](https://github.com/tesseract-ocr/tesseract)
+  * [Tesseract's ImproveQuality Documentation](https://github.com/tesseract-ocr/tessdoc/blob/master/ImproveQuality.md)
+    * [Rotation Sample from endolith on GitHub](https://gist.github.com/endolith/334196bac1cac45a4893#file-rotation_spacing-py)
+    * [Skewing Sample from mzucker on GitHub](https://github.com/mzucker/unproject_text)
+    * [OpenCV Image Denoising Tutorial](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_photo/py_non_local_means/py_non_local_means.html)
+    * [Canny Edge Detection Step-by-Step on Towards Data Science](https://towardsdatascience.com/canny-edge-detection-step-by-step-in-python-computer-vision-b49c3a2d8123)
+* Data Science Tools:
+  * [GitGuide on GitHub](https://github.com/git-guides/)
+    * [Creating a Simple Pull Request from Jake Vanderplas on YouTube](https://www.youtube.com/watch?v=rgbCcBNZcdQ)
+  * [OriginLab Graphing Software](https://www.originlab.com/index.aspx)
+  * [Tableau for Students](https://www.tableau.com/academic/students)
+    * [Tableau Tutorial from DSC 201](http://www.cis.umassd.edu/~dkoop/dsc201-2018fa/assignment2.html)
+    * [Tableau Tutorial Video by Ben Pfeffer](https://www.youtube.com/watch?v=2sp3HO3Jzfw)
+  * [Regex Cheat Sheet for Python](https://www.dataquest.io/wp-content/uploads/2019/03/python-regular-expressions-cheat-sheet.pdf)
+  * [R: dplyr Tutorial](https://genomicsclass.github.io/book/pages/dplyr_tutorial.html)
+* UMass Dartmouth Faculty and Groups:
+  * [Donghui Yan on UMass Dartmouth](http://www.math.umassd.edu/~dyan/)
+    * [Donghui's DSC 101 Page](https://sites.google.com/site/umassddsc101/)
+    * [Donghui's MTH 331 Page](https://sites.google.com/site/umassdmth331/)
+    * [Donghui's MTH 499/522 Page](https://sites.google.com/site/umassdmth499/)
+  * [Scott Field on UMass Dartmouth](http://www.math.umassd.edu/~sfield/)
+  * [Alfa Heryudono on UMass Dartmouth](http://www.math.umassd.edu/~aheryudono/)
+    * [Alfa's Resources for Talks and Papers](http://www.math.umassd.edu/~aheryudono/mth540f2018site/resources.html)
+  * [UMD Big Data Club on GitHub](https://umdbigdataclub.github.io)
+  * [(Julia) Hua Fang on UMass Dartmouth](https://www.umassd.edu/directory/hfang2/)
+    * [Fang Lab: Computational Statistics and Data Science](https://www.umassmed.edu/fanglab/)
+* Guest Speaker and Topic Talk Resources:
+  * Guest speakers (check notes for whatever Bri was able to transcribe):
+    1. **Apoorva Ramesh** (Feb 17th, Week 5)
+	2. **Michelle Barnes** (Mar 3rd, Week 7)
+	3. **Hannah Smith** (Apr 7th, Week 11)
+  * [Hack.Diversity](https://www.hackdiversity.com/) - From Michelle Barnes; Boston-based mentoring and career program for PoC in STEM, 
+  * Learning Sciences Programs from Hannah Smith:
+    1. [ASSISTments](https://new.assistments.org/) - Massive datasets of grade school students' problems and answers
+    2. [Wearable Learning Cloud Platform (WLCP)](http://wearablelearning.org/) - Platform for designing and playing math games for teaching
+    3. [Graspable Math Activities](https://graspablemath.com/) - Algebra tools for visualizing expression transformations
+  * Topic Talks:
+    1. **Brianna**: Robotic Process Automation (RPA) (Feb 24th, Week 6)
+	  * [Automation Anywhere](https://www.automationanywhere.com/) - Cloud RPA platform, also certification
+	  * [Lumaxia](https://lumaxia.com/) - RPA training platform
+	2. **Marco**: LaTeX, Markdown, and Workflow (Mar 3rd, Week 7)
+	  * [Overleaf](https://www.overleaf.com/) - Popular online collaborative LaTeX editor
+	  * [Google Collab Notebooks](https://colab.research.google.com/notebooks/io.ipynb) - Collaborative Python notebooks
+	3. **Hunter**: Demographics and the Economy (Mar 17th, Week 8)
+	  * [One Billion Americans: The Case for Thinking Bigger by Matthew Yglesias](https://www.amazon.com/One-Billion-Americans-Thinking-Bigger-ebook/dp/B082ZR6827) - Part of the discussion
+	  * [In Russia: Have a baby, Win a Refrigerator from AP](https://www.heraldnet.com/news/in-russia-have-a-baby-win-a-refrigerator/) - Article on the Russian method of promoting population growth
+	4. **Brian**: Data Science for Funsies (Mar 24th, Week 9)
+	  * [How Much Data is Generated Each Day? from World Economic Forum](https://www.weforum.org/agenda/2019/04/how-much-data-is-generated-each-day-cf4bddf29f/) - Quick overview of modern data volumes
+	  * [So You Want to Make a Hockey Data Viz? by Meghan Hall](https://medium.com/nightingale/so-you-want-to-make-a-hockey-data-viz-dda7b347f117) - Interview on how to approach visualization
+	  * [Meghan Hall's Tableau Public Page](https://public.tableau.com/profile/meghanhall#!/) - Great examples of visualization
+	  * [How to train an artificial neural network to play Diablo 2 using visual input?](https://stackoverflow.com/questions/6542274/how-to-train-an-artificial-neural-network-to-play-diablo-2-using-visual-input) - Example of how to apply data science to something neat
+	  * [Technavio](https://www.technavio.com/) - Data reports on niche topics (e.g. global pancake mix market)
+	  * [Monster Hunter Rise](https://www.monsterhunter.com/rise/us/) - Monster Hunter is Bri's go-to series for fun data science and finding true love, also Rise is really great
+	  * [Pokemon on Towards Data Science](https://towardsdatascience.com/tagged/pokemon) - List of articles tagged for Pokemon; lots of examples of how to apply data science to video game data
+	5. **Nick**: Three Aspects of Data Fundamentals
+	6. **Jimmy**: Sports and Data Science
+	  * [Paul DePodesta on Wikipedia](https://en.wikipedia.org/wiki/Paul_DePodesta) - Sports data scientist turned MLB/NFL executive
+	  * [James Holzhauer on Wikipedia](https://en.wikipedia.org/wiki/James_Holzhauer) - Jeopardy superstar who uses predictive models for sports gambling
+      * [Katerina Wu Has Dream Job as Penguins Data Scientist](https://www.nhl.com/penguins/news/katerina-wu-has-dream-job-as-penguins-data-scientist/c-322941668) - Awesome story of getting a DSC dream job with your favorite pro sports team as a 22-year-old college grad

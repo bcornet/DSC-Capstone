@@ -1,7 +1,32 @@
 import pandas as pd
+import numpy as np
 import re
 import matplotlib.pyplot as plt
+import cv2
+from collections import Counter
 from levenshtein import levenshtein_ratio_and_distance as lev
+from levenshtein import levmat
+
+try:
+    from PIL import Image, ImageDraw, ImageColor
+except ImportError:
+    import Image
+import pytesseract
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+
+try:
+    image = img['inv_mhgu2.png'].copy()
+except:
+    try:
+        image = Image.open('mhgu2.png')
+        if image.mode == 'RGBA':
+            image = image.convert('RGB')
+        image = Image.fromarray(np.array(image) ^ 255)
+    except:
+        print("Error loading the image, no good! Try stuff!")
+
+show_levmats = False
 
 mhgu = {
 0: ["Sharpness","+5","Critical Up","+4","ooo"],
@@ -21,7 +46,7 @@ mhgu_pm = mhgu_minus+mhgu_plus
 
 mhgu_slot = ['---','o--','oo-','ooo']
 
-fileName = 'mhgu_skill.csv'
+fileName = 'mhgu_skill.csv' #glad I made this a while ago
 try:
     mhgu_skill = pd.read_csv('mhgu_skill.csv')['SKILL'].tolist()
     print("Loaded data from '%s' successfully."%fileName)
@@ -80,96 +105,118 @@ mhgu_levmat_skill = np.eye(s1)
 mhgu_levmat_space = np.eye(s2)
 mhgu_levmat_punct = np.eye(s3)
 
-print("Starting Levenshtein matrices...")
-for i in range(0,s1):
-    for j in range(i+1,s1):
-        mhgu_levmat_skill[i,j] = lev(mhgu_skill[i],mhgu_skill[j],True)
-print("Done with full skill names!")
+if show_levmats:
+    print("Starting Levenshtein matrices...")
+    for i in range(0,s1):
+        for j in range(i+1,s1):
+            mhgu_levmat_skill[i,j] = lev(mhgu_skill[i],mhgu_skill[j],True)
+    print("Done with full skill names!")
 
-for i in range(0,s2):
-    for j in range(i+1,s2):
-        mhgu_levmat_space[i,j] = lev(mhgu_space[i],mhgu_space[j],True)
-print("Done with space-delimited skill words!")
+    for i in range(0,s2):
+        for j in range(i+1,s2):
+            mhgu_levmat_space[i,j] = lev(mhgu_space[i],mhgu_space[j],True)
+    print("Done with space-delimited skill words!")
 
-for i in range(0,s3):
-    for j in range(i+1,s3):
-        mhgu_levmat_punct[i,j] = lev(mhgu_punct[i],mhgu_punct[j],True)
-print("Done with punctuation-delimited skill words!")
-
-
-
-# view of top items
-lm1 = pd.DataFrame(mhgu_levmat_skill, columns=mhgu_skill, index=mhgu_skill).stack()
-lm2 = pd.DataFrame(mhgu_levmat_space, columns=mhgu_space, index=mhgu_space).stack()
-lm3 = pd.DataFrame(mhgu_levmat_punct, columns=mhgu_punct, index=mhgu_punct).stack()
-
-lm1[lm1 < 1].sort_values(ascending=False).head(50)
-lm2[lm2 < 1].sort_values(ascending=False).head(50)
-lm3[lm3 < 1].sort_values(ascending=False).head(50)
-#np.max(mhgu_levmat_skill - np.eye(s1))
-# 0.916 or 11/12
-#np.max(mhgu_levmat_space - np.eye(s2))
-# 0.875 or 7/8
-#np.max(mhgu_levmat_punct - np.eye(s3))
-# 0.909 or 10/11
-
-# symmetric matrices for plotting
-mhgu_levsym_skill = mhgu_levmat_skill + mhgu_levmat_skill.T - np.eye(s1)
-mhgu_levsym_space = mhgu_levmat_space + mhgu_levmat_space.T - np.eye(s2)
-mhgu_levsym_punct = mhgu_levmat_punct + mhgu_levmat_punct.T - np.eye(s3)
-
-sym1 = pd.DataFrame(mhgu_levsym_skill, columns=mhgu_skill, index=mhgu_skill)
-sym2 = pd.DataFrame(mhgu_levsym_space, columns=mhgu_space, index=mhgu_space)
-sym3 = pd.DataFrame(mhgu_levsym_punct, columns=mhgu_punct, index=mhgu_punct)
-
-#plt.imshow(sym1, cmap='hot', interpolation='nearest')
-#plt.show()
-
-sym = [sym1,sym2,sym3]
-names = ['skill','space','punct']
+    for i in range(0,s3):
+        for j in range(i+1,s3):
+            mhgu_levmat_punct[i,j] = lev(mhgu_punct[i],mhgu_punct[j],True)
+    print("Done with punctuation-delimited skill words!")
 
 
-for i in sym:
-    cz = i[i <= 0].count().sum()
-    mm = i[i > 0].mean().mean()
-    plt.imshow(i, cmap='hot', interpolation='nearest')
-    plt.show()
+
+    # view of top items
+    lm1 = pd.DataFrame(mhgu_levmat_skill, columns=mhgu_skill, index=mhgu_skill).stack()
+    lm2 = pd.DataFrame(mhgu_levmat_space, columns=mhgu_space, index=mhgu_space).stack()
+    lm3 = pd.DataFrame(mhgu_levmat_punct, columns=mhgu_punct, index=mhgu_punct).stack()
+
+    lm1[lm1 < 1].sort_values(ascending=False).head(50)
+    lm2[lm2 < 1].sort_values(ascending=False).head(50)
+    lm3[lm3 < 1].sort_values(ascending=False).head(50)
+    #np.max(mhgu_levmat_skill - np.eye(s1))
+    # 0.916 or 11/12
+    #np.max(mhgu_levmat_space - np.eye(s2))
+    # 0.875 or 7/8
+    #np.max(mhgu_levmat_punct - np.eye(s3))
+    # 0.909 or 10/11
+
+    # symmetric matrices for plotting
+    mhgu_levsym_skill = mhgu_levmat_skill + mhgu_levmat_skill.T - np.eye(s1)
+    mhgu_levsym_space = mhgu_levmat_space + mhgu_levmat_space.T - np.eye(s2)
+    mhgu_levsym_punct = mhgu_levmat_punct + mhgu_levmat_punct.T - np.eye(s3)
+
+    sym1 = pd.DataFrame(mhgu_levsym_skill, columns=mhgu_skill, index=mhgu_skill)
+    sym2 = pd.DataFrame(mhgu_levsym_space, columns=mhgu_space, index=mhgu_space)
+    sym3 = pd.DataFrame(mhgu_levsym_punct, columns=mhgu_punct, index=mhgu_punct)
+
+    #plt.imshow(sym1, cmap='hot', interpolation='nearest')
+    #plt.show()
+
+    sym = [sym1,sym2,sym3]
+    names = ['skill','space','punct']
 
 
-lens1 = []
-lens2 = []
-lens3 = []
-for i in mhgu_skill:
-    for j in mhgu_skill:
-        lens1.append(len(i)+len(j))
-for i in mhgu_space:
-    for j in mhgu_space:
-        lens2.append(len(i)+len(j))
-for i in mhgu_punct:
-    for j in mhgu_punct:
-        lens3.append(len(i)+len(j))
+    for i in sym:
+        cz = i[i <= 0].count().sum()
+        mm = i[i > 0].mean().mean()
+        plt.imshow(i, cmap='hot', interpolation='nearest')
+        plt.show()
+
+
+    lens1 = []
+    lens2 = []
+    lens3 = []
+    for i in mhgu_skill:
+        for j in mhgu_skill:
+            lens1.append(len(i)+len(j))
+    for i in mhgu_space:
+        for j in mhgu_space:
+            lens2.append(len(i)+len(j))
+    for i in mhgu_punct:
+        for j in mhgu_punct:
+            lens3.append(len(i)+len(j))
+
+# super evaluation method starts here!
 
 starts=[0,112,150,262,301]
 ends=[111,149,261,300,359]
+conf_skill = '--psm 7'
+conf_pm = '--psm 7 -c tessedit_char_whitelist=0123456789+-–'
+conf_slot = '--psm 7 -c tessedit_char_whitelist=Oo-–'
+configs=[conf_skill,conf_pm,conf_skill,conf_pm,conf_slot]
 
+# results dictionaries; look at these when you're done!
+# testX is the OCR output as is
+# testY is the OCR output corrected via dictionary
+# testdet is a 
 testX = {}
 testY = {}
 testdet = {}
+
+# imageArray is just the image in Numpy array format
+#imageArray = cv2.fastNlMeansDenoisingColored(np.array(image),None,10,10,7,21)
+imageArray = np.array(image)
+
 for X in range(170,177):
-    doot = (((np.array(img['inv_mhgu2.png'].copy()) > X) > 0)*255).astype('uint8')
+    print("Starting image at threshold of %d..."%X)
+    doot = (((imageArray > X) > 0)*255).astype('uint8')
     d = {}
     dy = {}
     for i in range(9):
+        print("\tRow %d [ "%i,end='')
         d[i] = {}
         dy[i] = {}
         for j in range(5):
-            d[i][j] = pytesseract.image_to_string(doot[i*32:31+i*32,starts[j]:ends[j],:], config='--psm 7')[:-2]
-            print("%s: %s"%((i,j),d[i][j]))
+            val = pytesseract.image_to_string(doot[i*32:31+i*32,starts[j]:ends[j],:], config=configs[j])[:-2]
+            d[i][j] = val
+            print(j,end=' ')
+        print(']')
+            #print("%s: %s"%((i,j),d[i][j]))
     testX[X] = d
     testY[X] = dy
 
 #S_skills = [mhgu_skill, mhgu_space, mhgu_punct]
 
+# acc is an array of the lev distance between the predicted (after dictionary) results vs. actual values
 acc = np.zeros([len(testX),9,5])
 xk = 0
 for k,v in testX.items(): # k is the index, v is the table
@@ -179,7 +226,7 @@ for k,v in testX.items(): # k is the index, v is the table
             real = mhgu[i][j]
             if orig == '':
                 #print("Empty string at %s from %s, moving on."%((i,j),_))
-                maxstr = 0.0
+                maxstr = ""
                 maxval = 0.0
                 truelev = 0.0
             else:
@@ -195,7 +242,7 @@ for k,v in testX.items(): # k is the index, v is the table
                     S = mhgu_skill
                     _ = "skill"
                     orig = orig.replace("—","-")
-
+                #pd.Series({v: lev("Shorpnes",v,True) for v in mhgu_skill})
                 #print("Getting %s [%s] from %s."%((i,j),orig,_))
                 maxval = 0
                 maxstr = ""
@@ -227,9 +274,68 @@ def printem(i=0,j=0):
     for k,v in testX.items():
         print("[%s]\t[%s]"%(v[i][j],testY[k][i][j]))
     
+for k,vk in testX.items():
+    for i,vi in vk.items():
+        for j,vj in vi.items():
+            if vj == '':
+                print("Blank at (%d,%d,%d)"%(k,i,j))
+
+# Now we finally decide which result to go with based on the most commonly returned result!
+# lazy method: https://www.geeksforgeeks.org/python-find-most-frequent-element-in-a-list/
+# returns the "first" most common item entered if there's a tie
+# most_frequent() DOES accept blank strings (or really any type), but predict doesn't 
+# ex1: predict on a list of ["a","b","c","a","b","","",""] returns "a"
+# ex2: predict on a list of ["b","a","c","a","b","","",""] returns "b"
+# ex3: most_frequent on either of the above two lists returns ""
+def most_frequent(List):
+    occurence_count = Counter(List)
+    return occurence_count.most_common(1)[0][0]
+
+def predict(i=0,j=0):
+    List = []
+    for k,v in testX.items():
+        s = testY[k][i][j]
+        if s != '':
+            List.append(s)
+    if List:
+        return most_frequent(List)
+    return ""
+
+predicted = {} # final result list
+predAcc = np.zeros([9,5]) # accuracy of results
+
+for i in range(9): # row
+    l = []
+    for j in range(5): # col
+        p = predict(i,j)
+        l.append(p)
+        predAcc[i,j] = lev(p,mhgu[i][j],True)
+    predicted[i] = l
+
+# predAcc.mean() 
+# returns 0.9296296296296297 when using whitelist method
+
+
+# use acc.mean(axis=0) for measuring accuracy
+# axis=0: across different cutoffs
+# axis=1: across different rows (talismans in MHGU's case)
+# axis=2: across different columns
 
 
 # RESULTS!
+# Total acc: 0.8788359788359787
+'''
+array([[1.        , 0.57142857, 1.        , 1.        , 0.42857143],
+       [0.71428571, 0.85714286, 1.        , 1.        , 1.        ],
+       [1.        , 0.71428571, 1.        , 1.        , 0.66666667],
+       [1.        , 1.        , 1.        , 1.        , 1.        ],
+       [1.        , 0.5       , 1.        , 1.        , 0.66666667],
+       [0.42857143, 1.        , 1.        , 1.        , 0.        ],
+       [1.        , 1.        , 1.        , 1.        , 0.        ],
+       [1.        , 1.        , 1.        , 1.        , 1.        ],
+       [1.        , 1.        , 1.        , 1.        , 1.        ]])
+'''
+
 # skill names:
 # 2 cases where "Blunt" (2nd row, 1st col) had an empty string: 175, 176
 # 4 cases where "Sheathing" (1st row, 6 col) had an empty string: 170, 171, 172, 173
@@ -265,3 +371,133 @@ def printem(i=0,j=0):
 # "---" was completely untested
 # may need to assume a length match may be as accurate, possibly more! 
 # this is true for single slots and "eee", as well as one of the doubles as "oo"
+
+
+
+# Denoising showed improvements at some locations, but worse in others
+
+# Total acc: 0.8687389029685947
+'''
+accDn = np.array([
+       [0.75963719, 1.        , 0.21456583, 1.        , 0.        ],
+       [1.        , 0.28571429, 1.        , 1.        , 1.        ],
+       [1.        , 1.        , 1.        , 1.        , 0.66666667],
+       [1.        , 1.        , 1.        , 1.        , 1.        ],
+       [1.        , 0.5       , 1.        , 1.        , 0.66666667],
+       [1.        , 1.        , 1.        , 1.        , 0.        ],
+       [1.        , 1.        , 1.        , 1.        , 0.        ],
+       [1.        , 1.        , 1.        , 1.        , 1.        ],
+       [1.        , 1.        , 1.        , 1.        , 1.        ]])
+'''
+# This is likely due to the noise process effectively blurring the results
+# of an already relatively clean image (though the original is off due to jpg compression).
+# We can use the denoise function on blank strings though! This could help
+
+
+# CHANGE BY POSITION:
+# positive: normal better; negative: denoise better
+'''
+array([[ 0.24, -0.43,  0.79,  0.  ,  0.43],
+       [-0.29,  0.57,  0.  ,  0.  ,  0.  ],
+       [ 0.  , -0.29,  0.  ,  0.  ,  0.  ],
+       [ 0.  ,  0.  ,  0.  ,  0.  ,  0.  ],
+       [ 0.  ,  0.  ,  0.  ,  0.  ,  0.  ],
+       [-0.57,  0.  ,  0.  ,  0.  ,  0.  ],
+       [ 0.  ,  0.  ,  0.  ,  0.  ,  0.  ],
+       [ 0.  ,  0.  ,  0.  ,  0.  ,  0.  ],
+       [ 0.  ,  0.  ,  0.  ,  0.  ,  0.  ]])
+'''
+# in most cases, no difference
+# gains on first column (for blank strings), second column (handling +- in some instances)
+# losses on first row in general (aside from second column) and row2 col2
+
+# suggested use is to apply only on a blank string
+# for slots, similar results: < and d appearing regularly in place of - and o
+# a single "a" for single slots
+# no "e" ever came up
+
+# plus/minus:
+# perfect score at 0,1
+# interpreted + as 4 at 1,1; lead to -4 return
+# no sign picked up at 4,1; lead to -9 instead of +9
+# interpreted 1 as blank or H in 4,4
+
+# based on each dictionary, there should be a minimum length for ANY result
+
+# SO!
+# we could re-examine a word or even a single character based on the following:
+# -- length is shorter than minimum length possible in dictionary
+# -- multiple results had the same lev distance
+
+# we can also speed up the dictionary process for pre-matched values
+# HOWEVER! we'd still want distinct OCR outputs from distinct real values
+# for example: if we ONLY see "ood" from "ooo", that's fine
+# but if we're seeing "ood" generated on both "oo-" and "ooo", then we've got a problem
+
+# reminder of the general idea: CONSISTENCY!
+# we don't care if the results are perfect if we can consistently match them via dictionary
+# we also need to assume that there's no one single perfect method for any image
+#    let alone ALL images
+
+
+
+
+#mhgu_unique = pd.Series(pd.DataFrame(mhgu).values.flatten()).unique()
+
+# 45 items normally, 24 unique
+
+# SAMPLE FOR TESTING DENOISE WITH STAR WARS BACKGROUND:
+#k = Image.open("esb.png")
+#newk = np.array(k)
+#newk3 = cv2.fastNlMeansDenoisingColored(newk,None,10,10,7,21)
+#newk3 = ((newk3.std(axis=2) > newk3.std(axis=2).mean())*255).astype('uint8')
+#Image.fromarray(newk3).show()
+#newk2 = ((newk.std(axis=2) > newk.std(axis=2).mean())*255).astype('uint8')
+#newk2 = np.array(Image.fromarray(newk2).convert('RGB'))
+#newk2 = cv2.fastNlMeansDenoisingColored(newk2,None,10,10,7,21)
+#Image.fromarray(newk2).show()
+
+# can see how correcting BEFORE applying the threshold removes fewer stars
+# but it also has less bleeding between adjacent characters
+
+# I'll include the download link for this when I clean it up
+AC = pd.ExcelFile("C:\\Users\\bcorn\\Documents\\AC\\Data Spreadsheet for Animal Crossing New Horizons.xlsx")
+
+housewares = pd.read_excel(AC,"Housewares")
+house = housewares.Name.unique().tolist()
+
+# this takes a while; should be 605 housewares in ACNH, so 182710 calculations
+# comparatively, MHGU skills has 205 items, so 20910 calculations
+acnh_levmat_house = levmat(house,output="s")
+# heatmap shows many bright spots:
+# same set items ("wooden-block ___", "ironwood ___", etc.)
+# same shape items ("____ chair", "____ bed", etc.)
+# crazy coincidences ("peach chair" and "beach chair" for example)
+# closest match was 0.96 for Mr. and Mrs. Flamingo, congrats to the newlyweds
+# this indicates a potential accuracy issue when using a large dictionary
+# note also that ACNH capitalizes the first letter in each item in menus
+# will need to account for list corrections
+
+acnh_levmat_house[acnh_levmat_house < 1].sort_values(ascending=False)
+
+
+
+
+imgArray = []
+for i in ['mhgu.jpg','mhgu2.png','acnh.jpg','acnh2.png']:
+    imgArray.append(rgb2gray(np.array(img[i])))
+
+detector = cannyEdgeDetector(imgArray, sigma=1.4, kernel_size=5, lowthreshold=0.09, highthreshold=0.17, weak_pixel=100)
+imgs_final = detector.detect()
+visualize(imgs_final, 'gray')
+
+
+# without something like a CNN or input from the user, 
+# it'll be very difficult to determine table boundaries in images like acnh.jpg
+# BUT! for something like mhgu.jpg, it should be easy to detect
+# on the other hand, anch.jpg has some fairly obvious row separators,
+# whereas mhgu.jpg has many row boundaries cut off
+# also acnh.jpg's actual font is perfectly legible just from this method, mhgu.jpg's is not
+
+
+

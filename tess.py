@@ -27,7 +27,7 @@ for i in L:
     print('========%s======='%i)
     try:
         img[i] = Image.open(i)
-        if img[i].mode == 'RGBA'
+        if img[i].mode == 'RGBA':
             img[i] = img[i].convert('RGB')
     except:
         print("ERROR: Can't find file '%s' probably"%i)
@@ -397,6 +397,25 @@ def dwt(p):
 
 
 
+def denoise(n):
+    global img
+    if n in L+invL:
+        k = img[n].copy()
+    elif type(n) == str:
+        k = Image.open(n)
+    else:
+        print("I dunno")
+        return
+    #k = np.array(k)
+    newk = cv2.fastNlMeansDenoisingColored(np.array(k),None,10,10,7,21)
+    # Doc from Image Denoising in OpenCV:
+    # https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_photo/py_non_local_means/py_non_local_means.html
+    # h : parameter deciding filter strength. Higher h value removes noise better, but removes details of image also. (10 is ok)
+    # hForColorComponents : same as h, but for color images only. (normally same as h)
+    # templateWindowSize : should be odd. (recommended 7)
+    # searchWindowSize : should be odd. (recommended 21)
+    Image.fromarray(newk).show()
+    return newk
 
 
 
@@ -406,8 +425,6 @@ def dwt(p):
 
 
 
-        
-        
 def threshold(img):
     
     if len(img.shape) > 2:

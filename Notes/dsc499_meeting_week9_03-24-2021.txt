@@ -1,0 +1,58 @@
+dsc499_meeting_week9_03-24-2021
+
+
+Bri's Topic Talk!
+- it was good
+- hockey visualization
+https://medium.com/nightingale/so-you-want-to-make-a-hockey-data-viz-dda7b347f117
+https://public.tableau.com/profile/meghanhall#!/vizhome/GoaliePullTimes2018-19/GoaliePullTimes18-19
+
+
+UPDATES:
+
+BRIAN: no real update due to last-minute topic talk and other work
+- generally on track!
+- checklist is out of date apparently
+- may take an extra week at the start of April to tidy project
+
+
+
+
+
+ZIYU:
+made map with time slider
+doesn't work?
+may have an issue with empty values on certain dates:
+not every state has an update on every date
+
+goal is to have the colors appear over each state
+
+clusters are identified, so that's good
+
+timeline: seems to be on track
+	Scott: MA counties? can we replicate this at a county level?
+	Ziyu: could, but time-wise probably not
+Marco did something like that for another class already I guess, good for him
+
+
+
+MARCO:
+was on CNN, should be doing meta-modelling according to instructor
+combine model!
+
+epoch vs. accuracy plot (test and train lines)
+another graph of #models vs. accuracy
+green dots for single model accuracy, blue connected dots for combined accuracy
+can distribute weights of each model in the combined
+
+timeline: lookin good
+
+
+
+BRIANNA:
+stacked histogram for smoker types (smoker / current, former; non)
+former has a weird gap between 2000 and 3000 days
+made another set for stages of progression
+on track!
+
+

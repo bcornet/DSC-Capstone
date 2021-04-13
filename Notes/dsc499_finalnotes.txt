@@ -1,0 +1,39 @@
+general idea:
+- use existing paper as base
+- go over new methods:
+-- Rotation
+-- Skewing
+-- Denoise
+-- Edge Detection (Canny)
+- expand on dictionary
+- evaluate accuracy
+- discuss unused methods and future considerations
+-- font sample (can calculate distance)
+-- CNN
+-- Image Difference
+
+
+Focus of methods on:
+- recognizing regions of interest (ROI)
+- determining the most effective correction methods for a given image
+- text correction
+
+
+DISTANCE METHODS
+https://www.joyofdata.de/blog/comparison-of-string-distance-algorithms/
+Hamming
+Levenshtein
+
+
+IMAGE DIFFERENCE
+https://www.pyimagesearch.com/2017/06/19/image-difference-with-opencv-and-python/
+
+
+
+
+
+https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/33418.pdf
+
+
+
+using a whitelist of "Oo-— results in all slot values outputting "oo"

@@ -1,0 +1,163 @@
+dsc499_meeting_weekA_03-31-2021
+
+yes the meeting numbers are in hex now, too lazy to rename
+
+
+for final presentation:
+no real dress code, camera expected, the usual
+
+approximate date for talk but it's basically just the last week of classes
+maybe study week
+idea is to get the maximum number of students/faculty available for capstone day
+includes not just us but also grad student projects
+
+last week of April, first week of May
+will probably last like 5 hours
+don't need to be there for all 5 hours, but expected to be there for at least 3
+
+next wednesday: rough draft due!
+goal is to get sections, bullet points, etc.
+will provide mock grade
+if you actually get a full grade from a full report, you're actually done!
+
+for talks, plan for 15 minutes
+the exact time window may be smaller
+this window includes time for questions
+
+
+
+NICK'S TOPIC TALK:
+Three Aspects of Data Fundamentals
+
+VOLUME, VELOCITY, VARIETY
+
+data generated is goin up up up, changing constantly, and in various formats
+
+analyzing is more challenging!
+but it's always worth it
+
+still more demand for solutions
+data is easier to collect and cheaper to host than ever before
+
+WHAT KIND OF DATA:
+OLTP (transactional data)
+OLAP (analytical data)
+
+DATA PIPELINE:
+generators
+processors
+consumers
+
+DATA PROFESSIONALS:
+Data engineers
+DB admins
+Data analysts/scientists
+
+
+OLTP: transactional, high volume, millions of transactions per day
+normalization helps speed throughput
+lots of queries, joins, etc.
+
+OLAP: analytical systems with denormalized data for easier insights
+ingestion, transformation, querying, visualization
+
+INGESTION: capture raw data, store data
+TRANSFORMATION: data cleaning, aggregations
+QUERYING: looking for trends, generate reports
+VISUALIZATION: illustration
+
+for Bri's project: 
+  ingestion -> get images/dictionaries
+  transformation -> clean image for OCR or transform dict
+  querying -> comparisons of output accuracy
+  visualization -> comparison of accuracy by method, heatmap, etc.
+
+analysts: explore/analyze data to inform companies [querying, visualization]
+engineers: cleaning, etc. [ingestion, transformation]
+some third thing, oops
+
+who: data professional
+what: kind of data
+how: data pipeline
+
+
+	Scott: job market for these positions? starting salaries, position availability, etc.?
+	Nick: good question, I dunno
+	Scott: heard data engineering is robust, well-paying, but I dunno if that's true
+	
+	Bri: what's your favorite part?
+	Nick: inputting, managing databases probably
+	Scott: databases are always relevant
+
+
+UPDATES!
+
+
+BRIANNA:
+doing the initial EDA, was splitting non-smokers from smokers
+but smoking doesn't necessarily leave to lung cancer
+will test a theory of cancer+nonsmoker:
+train on cancer+smoker, test on cancer+nonsmoker
+
+	Scott: could build two different models based on history and try both
+	Brianna: basically trying to narrow down
+
+basically trying to predict factors for lung cancer other than smoking
+
+looking at:
+- prob of getting cancer
+- days to live
+
+should probably split into two models
+
+- if you do, would be interesting to see a plot of cancer p% vs. days to live
+
+	MARCO: regression doesn't imply causation,
+	if you just put one thing, that's always going to be a strong value
+	put in a bunch of columns and do random forest or PCA
+	SCOTT: not necessarily that we're predicting cause and effect
+	if marital status ends up mattering, we'd use it even if it's not directly relevant
+	if we're looking at the model, we'd look at probabilistic test
+	Marnov-Smirnoff test, JS divergence (Jepsen Shannon?)
+	quantitative model testing is the next step,
+	but first step is just building model
+	may not have time to explore all of it
+	BRIANNA: yeah just doing what I can
+	also starting the paper
+	SCOTT: as far as quantifying the model, any sense of how to do that?
+	BRIANNA: yeah, I'll play with it
+	splitting into two different types seems good
+
+
+JIMMY:
+building tableau representation
+graph of year by runs scored; series of counts basically
+
+	BRI: if you find time, any way to have a 3D map?
+	JIMMY: no idea yet but yeah that'd be cool
+
+https://www.tableau.com/about/blog/2020/2/bring-your-data-life-viz-animations
+
+https://help.tableau.com/current/pro/desktop/en-us/trendlines_add.htm
+
+also starting to make a linear regression model
+
+more R madness
+boy I hate R
+
+
+BRIAN:
+
+showed off some stuff
+Scott: haven't looked at github page, but readme instructions?
+Brian: wanna assemble the full implementation in time for presentation
+will be super sad if I can't have this ready but oh well
+
+considering a notebook for example
+
+
+MARCO:
+
+had a dream of an idea! or late night idea, I forget
+was busy writing my own thing, but it seems to be about redundancy and necessity
+seems like CNN outdoes everything, so combining models seems pointless

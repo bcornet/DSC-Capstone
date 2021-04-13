@@ -1,0 +1,255 @@
+dsc499_meeting_weekB_04-07-2021
+
+(I'm like 8 minutes late)
+
+apparently everyone thought the first paper draft was due on the 14th, so now it's just not due until then
+neat
+also drink water after eating popcorn
+
+
+GUEST SPEAKER!
+former UMD student, at WPI I think?
+joining at 3:45
+
+
+
+TOPICS TALK!
+
+JIMMY: SPORTZ
+
+not just "how to win", but also player safety stuff
+field growing, starting salary about 60k, 93k national average
+
+common languages:
+R, Python
+Java, Julia, Scala, C/C++, Clojure
+
+recommended path:
+earn degree (BS minimum)
+call up universities and see if they've got jobs
+after building experience/resume, approach pro teams
+
+also can apply to:
+product lines (Nike, etc.)
+betting sites (Draft Kings, etc.)
+
+From Scott Field to Everyone:  03:20 PM
+https://en.wikipedia.org/wiki/Paul_DePodesta
+https://en.wikipedia.org/wiki/James_Holzhauer
+From Marco Sousa to Everyone:  03:20 PM
+That's some serious commitment
+From Me to Everyone:  03:21 PM
+https://www.nhl.com/penguins/news/katerina-wu-has-dream-job-as-penguins-data-scientist/c-322941668
+
+
+also consider e-sports
+stop hatin hockey
+
+
+UPDATES
+
+JIMMY: 
+progress! like really lookin good
+- starting to realize you basically don't need R
+Python gotcha back
+
+	From Cachelle Johnson-lewis to Everyone:  03:31 PM
+	https://www.youtube.com/watch?v=lc76P-C205o
+	https://www.youtube.com/watch?v=dgArfzvuAlw
+
+
+BRIANNA:
+performing logit and regression tree stuff similar to CIS 490 methods
+looks good, about 12 predictors
+histogram is super skewed
+
+	Bri: log scale the histogram?
+	Brianna: yeah
+	also each individual predictor isn't very strong
+	Bri: wouldn't it be the case that someone would need to "stack" strong predictors to have a serious risk?
+	Brianna: yeah
+	
+	Marco: look at SENS? (probably just saying look at ROC curve)
+	Brianna: did that, it's right here: AUC ~ 0.665
+	could I take a different sample?
+	
+	Scott: maybe equally weighted inputs? same-ish sample size from yes/no
+	could also add weighting factors: a FN could be weighted more heavily than a FP, etc.
+	build model with several samples to avoid bias
+	could also set aside a sample just for testing purposes
+	
+	main idea:
+	as long as we write down the assumptions on methodology and point out where we can improve, that's probably good enough
+
+
+GUEST IS HERE!
+Hannah Smith
+
+Math/Psych major
+graduated in 2018, went to grad school fair
+was thinking DSC, MTH, PSY
+met with someone at WPI for Learning Sciences program
+was a perfect fit, matches MTH and PSY and teaching
+got masters in 2020 last May
+continuing in PhD program at WPI
+super interesting to go from in-person to virtual but really good
+
+Scott: DSC capstone program, lots of interest in DSC masters and related
+thoughts and tips?
+
+Hannah: my program is combo of CIS PSY and some DSC
+more of a program than a major
+situated in CIS PSY and DSC
+has a friend who [got a text, missed this]
+
+any questions about getting in, applying, classes, research
+
+Cachelle: a few q's
+research project currently?
+
+showing screen!
+affiliated with three research projects/groups
+doing a ton of things!
+
+#1: ASSISTments online platform: new.assistments.org
+tutoring thing; students do homework, we get data
+project I did was data from last year:
+every problem/assignment BEFORE and AFTER covid shutdown
+- this is open, anyone can use this!
+HUGE files, one is 5.7GB
+
+	Scott: subjects?
+	Hannah: mostly math, roughly 3rd grade to high school
+
+problems completed, mean correctness, problem type
+
+surprisingly, students did better DURING the shutdown
+weird
+may have been because it was the end of the year, who knows
+
+	Cachelle: any individual student data?
+	Hannah: does have location variables, covers all of US
+	not sure how accurate, but it's in there
+	
+tutoring studies as well
+
+can design your own study as well!
+example: spatial reasoning skills test against geometry problem
+
+can design studies or look at the data that's there, whatever
+it's great!
+
+
+#2: Wearable Learning Cloud Platform   wearablelearning.org
+design games to use in classrooms
+teachers use it to teach! works!
+
+
+#3: graspablemath.com
+tool for matching problems with requirements
+e.g. make an equation that equals 12 with three steps: 4+4+4
+animated algebra thing: distributing 3(6-9x) + 5 to simplify
+
+
+Brianna: how have you found managing the PhD program?
+hours per week? funding?
+Hannah: experienced a few things
+started as masters student
+typically not funded
+but WPI did fund it
+started as a TA, that's one way to get funding
+typically work 20hrs/week as TA with 20hrs/week as student
+started with lighter workload so it was a little different
+went into RA position in second year, 20/20 hours for research/schoolwork
+grad school is less about busy work and more about real work
+the 20 hours never really sticks
+
+I've always been great at time management
+played sports, double major, few jobs at UMD, so it wasn't too hard
+I like grad school since I can pick when I wanna work
+if I wanna go grocery shopping on a tuesday, I can do that
+but I might need to put in an hour of work on a saturday morning
+I typically work sunday nights too
+
+you don't have many classes
+I've got one 3hr class a week, plus a bunch of asynch
+so class time is lower, more time to manage yourself
+
+	Scott: actually 20 hours a week?
+	Hannah: depends on deadlines!
+	generally more when urgent, other weeks slower
+
+	Brian: any other programs at other universities?
+	Hannah: yeah, it's a new program so other collabs are common
+	UWisconsin Madison has some people in various departments
+	UC Berkeley
+	Carneghie Mellon
+	can't remember, but there's a lot and a lot of people doing similar work
+	
+	Cachelle: connected with other programs?
+	engineering, etc. when you were at UMD?
+	Hannah: UMD was just undergrad, so I dunno
+	you mean other activities?
+	this major was new when I went here so I dunno
+	I worked at tutoring center, helped make connections
+	was an undergrad TA for calc classes
+	not really sure I was in any classes, just active in the department
+	making connections is super important in everything you do
+	even in classes!
+	emailed Scott just the other day just to hear from him!
+	great to make lots of connections, easier at UMD since it's a smaller school
+	I dunno, is that helpful?
+	
+	Scott: when applying to grad school, what'd you do to prepare?
+	GREs, pros/cons, etc. before you made your decision?
+	Hannah: applied to WPI and Boston College (measurement evaluations statistics program)
+	got into both MS programs
+	was looking for specific programs that combined math education and psych
+	didn't want to leave MA, so that was a factor
+	didn't study for GREs anyway, figured it was about natural intelligence
+	maybe I should've but they're weighing them less nowadays anyway
+	had to write statement of purpose, probably cheesy
+	biggest thing is reaching out to people in grad school
+	so I'd go meet people in person to reach out
+	easier to do now in virtual
+	helps that people love to talk about themselves (here I am!)
+	can talk to people and find out if you're a good fit
+	not just about finding out if you're a good fit for them, 
+	but if they're a good fit for you too
+	deciding factor was basically WPI offering to pay/fund me,
+	Worcester is cheaper to live in than Boston,
+	BC only partial pay/fund
+	so basically just money, but I'm  happy with it
+	also I think interdisciplinary programs are better than bein in a bubble
+	DSC is already interdisciplinary, so it's naturally good
+	meet new people, new opportunities, great all around
+	
+	Bri: any bad experiences/regrets?
+	Hannah: no regrets but one bad experience
+	one bad semester, courses were bad, teacher was leaving
+	wanted to leave WPI after that and felt really bad
+	was looking at Australia and basically melting down
+	prof I was working with went to the same conference
+	saw her at breakfast, went over to say hi, she got up and walked away
+	advisor said you probably wouldn't be a great fit, maybe she wasn't friendly
+	people are generally friendly, grad or undergrad
+	but that woman wasn't
+	general idea: if you think it's a red flag, it probably is
+	you have to be happy: you're spending 2-6 years of your life there,
+	it has to be a great fit
+
+can email me if you've got more questions
+great opportunity if you want to work with educational data this summer
+get to earn money, stay in MA, it's nice
+
+	Cachelle: have you looked at Boston area data?
+	Hannah: nope, but you can! it's open, go for it
+
+
+
+
+oops gotta go
+
+Bri did stuff, it was great
+
+
