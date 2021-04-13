@@ -76,6 +76,7 @@ I came up with a bunch of project ideas for the capstone, most of which I was ho
     * [Tableau Tutorial Video by Ben Pfeffer](https://www.youtube.com/watch?v=2sp3HO3Jzfw)
   * [Regex Cheat Sheet for Python](https://www.dataquest.io/wp-content/uploads/2019/03/python-regular-expressions-cheat-sheet.pdf)
   * [R: dplyr Tutorial](https://genomicsclass.github.io/book/pages/dplyr_tutorial.html)
+  * [R Programming @ UMassD from Donghui Yan](https://sites.google.com/site/rprogrammingumassd/home)
 * UMass Dartmouth Faculty and Groups:
   * [Donghui Yan on UMass Dartmouth](http://www.math.umassd.edu/~dyan/)
     * [Donghui's DSC 101 Page](https://sites.google.com/site/umassddsc101/)
