@@ -90,8 +90,8 @@ I came up with a bunch of project ideas for the capstone, most of which I was ho
 * Guest Speaker and Topic Talk Resources:
   * Guest speakers (check notes for whatever Bri was able to transcribe):
     1. **Apoorva Ramesh** (Feb 17th, Week 5)
-	2. **Michelle Barnes** (Mar 3rd, Week 7)
-	3. **Hannah Smith** (Apr 7th, Week 11)
+    2. **Michelle Barnes** (Mar 3rd, Week 7)
+    3. **Hannah Smith** (Apr 7th, Week 11)
   * [Hack.Diversity](https://www.hackdiversity.com/) - From Michelle Barnes; Boston-based mentoring and career program for PoC in STEM, 
   * Learning Sciences Programs from Hannah Smith:
     1. [ASSISTments](https://new.assistments.org/) - Massive datasets of grade school students' problems and answers
@@ -99,24 +99,24 @@ I came up with a bunch of project ideas for the capstone, most of which I was ho
     3. [Graspable Math Activities](https://graspablemath.com/) - Algebra tools for visualizing expression transformations
   * Topic Talks:
     1. **Brianna**: Robotic Process Automation (RPA) (Feb 24th, Week 6)
-	  * [Automation Anywhere](https://www.automationanywhere.com/) - Cloud RPA platform, also certification
-	  * [Lumaxia](https://lumaxia.com/) - RPA training platform
-	2. **Marco**: LaTeX, Markdown, and Workflow (Mar 3rd, Week 7)
-	  * [Overleaf](https://www.overleaf.com/) - Popular online collaborative LaTeX editor
-	  * [Google Collab Notebooks](https://colab.research.google.com/notebooks/io.ipynb) - Collaborative Python notebooks
-	3. **Hunter**: Demographics and the Economy (Mar 17th, Week 8)
-	  * [One Billion Americans: The Case for Thinking Bigger by Matthew Yglesias](https://www.amazon.com/One-Billion-Americans-Thinking-Bigger-ebook/dp/B082ZR6827) - Part of the discussion
-	  * [In Russia: Have a baby, Win a Refrigerator from AP](https://www.heraldnet.com/news/in-russia-have-a-baby-win-a-refrigerator/) - Article on the Russian method of promoting population growth
-	4. **Brian**: Data Science for Funsies (Mar 24th, Week 9)
-	  * [How Much Data is Generated Each Day? from World Economic Forum](https://www.weforum.org/agenda/2019/04/how-much-data-is-generated-each-day-cf4bddf29f/) - Quick overview of modern data volumes
-	  * [So You Want to Make a Hockey Data Viz? by Meghan Hall](https://medium.com/nightingale/so-you-want-to-make-a-hockey-data-viz-dda7b347f117) - Interview on how to approach visualization
-	  * [Meghan Hall's Tableau Public Page](https://public.tableau.com/profile/meghanhall#!/) - Great examples of visualization
-	  * [How to train an artificial neural network to play Diablo 2 using visual input?](https://stackoverflow.com/questions/6542274/how-to-train-an-artificial-neural-network-to-play-diablo-2-using-visual-input) - Example of how to apply data science to something neat
-	  * [Technavio](https://www.technavio.com/) - Data reports on niche topics (e.g. global pancake mix market)
-	  * [Monster Hunter Rise](https://www.monsterhunter.com/rise/us/) - Monster Hunter is Bri's go-to series for fun data science and finding true love, also Rise is really great
-	  * [Pokemon on Towards Data Science](https://towardsdatascience.com/tagged/pokemon) - List of articles tagged for Pokemon; lots of examples of how to apply data science to video game data
-	5. **Nick**: Three Aspects of Data Fundamentals
-	6. **Jimmy**: Sports and Data Science
-	  * [Paul DePodesta on Wikipedia](https://en.wikipedia.org/wiki/Paul_DePodesta) - Sports data scientist turned MLB/NFL executive
-	  * [James Holzhauer on Wikipedia](https://en.wikipedia.org/wiki/James_Holzhauer) - Jeopardy superstar who uses predictive models for sports gambling
-      * [Katerina Wu Has Dream Job as Penguins Data Scientist](https://www.nhl.com/penguins/news/katerina-wu-has-dream-job-as-penguins-data-scientist/c-322941668) - Awesome story of getting a DSC dream job with your favorite pro sports team as a 22-year-old college grad
+       * [Automation Anywhere](https://www.automationanywhere.com/) - Cloud RPA platform, also certification
+       * [Lumaxia](https://lumaxia.com/) - RPA training platform
+    2. **Marco**: LaTeX, Markdown, and Workflow (Mar 3rd, Week 7)
+       * [Overleaf](https://www.overleaf.com/) - Popular online collaborative LaTeX editor
+       * [Google Collab Notebooks](https://colab.research.google.com/notebooks/io.ipynb) - Collaborative Python notebooks
+    3. **Hunter**: Demographics and the Economy (Mar 17th, Week 8)
+       * [One Billion Americans: The Case for Thinking Bigger by Matthew Yglesias](https://www.amazon.com/One-Billion-Americans-Thinking-Bigger-ebook/dp/B082ZR6827) - Part of the discussion
+       * [In Russia: Have a baby, Win a Refrigerator from AP](https://www.heraldnet.com/news/in-russia-have-a-baby-win-a-refrigerator/) - Article on the Russian method of promoting population growth
+    4. **Brian**: Data Science for Funsies (Mar 24th, Week 9)
+       * [How Much Data is Generated Each Day? from World Economic Forum](https://www.weforum.org/agenda/2019/04/how-much-data-is-generated-each-day-cf4bddf29f/) - Quick overview of modern data volumes
+       * [So You Want to Make a Hockey Data Viz? by Meghan Hall](https://medium.com/nightingale/so-you-want-to-make-a-hockey-data-viz-dda7b347f117) - Interview on how to approach visualization
+       * [Meghan Hall's Tableau Public Page](https://public.tableau.com/profile/meghanhall#!/) - Great examples of visualization
+       * [How to train an artificial neural network to play Diablo 2 using visual input?](https://stackoverflow.com/questions/6542274/how-to-train-an-artificial-neural-network-to-play-diablo-2-using-visual-input) - Example of how to apply data science to something neat
+       * [Technavio](https://www.technavio.com/) - Data reports on niche topics (e.g. global pancake mix market)
+       * [Monster Hunter Rise](https://www.monsterhunter.com/rise/us/) - Monster Hunter is Bri's go-to series for fun data science and finding true love, also Rise is really great
+       * [Pokemon on Towards Data Science](https://towardsdatascience.com/tagged/pokemon) - List of articles tagged for Pokemon; lots of examples of how to apply data science to video game data
+    5. **Nick**: Three Aspects of Data Fundamentals
+    6. **Jimmy**: Sports and Data Science
+       * [Paul DePodesta on Wikipedia](https://en.wikipedia.org/wiki/Paul_DePodesta) - Sports data scientist turned MLB/NFL executive
+       * [James Holzhauer on Wikipedia](https://en.wikipedia.org/wiki/James_Holzhauer) - Jeopardy superstar who uses predictive models for sports gambling
+       * [Katerina Wu Has Dream Job as Penguins Data Scientist](https://www.nhl.com/penguins/news/katerina-wu-has-dream-job-as-penguins-data-scientist/c-322941668) - Awesome story of getting a DSC dream job with your favorite pro sports team as a 22-year-old college grad
