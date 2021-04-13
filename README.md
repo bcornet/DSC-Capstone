@@ -115,8 +115,8 @@ I came up with a bunch of project ideas for the capstone, most of which I was ho
        * [Technavio](https://www.technavio.com/) - Data reports on niche topics (e.g. global pancake mix market)
        * [Monster Hunter Rise](https://www.monsterhunter.com/rise/us/) - Monster Hunter is Bri's go-to series for fun data science and finding true love, also Rise is really great
        * [Pokemon on Towards Data Science](https://towardsdatascience.com/tagged/pokemon) - List of articles tagged for Pokemon; lots of examples of how to apply data science to video game data
-    5. **Nick**: Three Aspects of Data Fundamentals
-    6. **Jimmy**: Sports and Data Science
+    5. **Nick**: Three Aspects of Data Fundamentals (Mar 31st, Week 10)
+    6. **Jimmy**: Sports and Data Science (Apr 7th, Week 11)
        * [Paul DePodesta on Wikipedia](https://en.wikipedia.org/wiki/Paul_DePodesta) - Sports data scientist turned MLB/NFL executive
        * [James Holzhauer on Wikipedia](https://en.wikipedia.org/wiki/James_Holzhauer) - Jeopardy superstar who uses predictive models for sports gambling
        * [Katerina Wu Has Dream Job as Penguins Data Scientist](https://www.nhl.com/penguins/news/katerina-wu-has-dream-job-as-penguins-data-scientist/c-322941668) - Awesome story of getting a DSC dream job with your favorite pro sports team as a 22-year-old college grad
