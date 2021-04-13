@@ -2,22 +2,26 @@
 
 import pandas as pd
 import numpy as np
-try:
-    from PIL import Image, ImageDraw, ImageColor
-except ImportError:
-    import Image
 
 # INITIALIZE DATASET
-hw = np.array(Image.open('hw3_table.png'))
-hw = hw.mean(axis=2) # lazy method of converting to grayscale
-rows = np.where(hw[:,1] == 0) # determine rows based on solid black lines
-cols = np.where(hw[1,:] == 0) # determine columns based on solid black lines
-
 try: 
     df = pd.read_csv('hw3_table.csv',index_col=0)
 except: # this requires Tesseract! if you don't have it, you ain't runnin this
+    print("Can't find 'hw3_table.csv', gonna try and make it! Ask Bri for help probably\n.")
+    tess = False
     import pytesseract
-    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+    tess = True
+    try:
+        from PIL import Image, ImageDraw, ImageColor
+    except ImportError:
+        import Image
+
+    hw = np.array(Image.open('hw3_table.png'))
+    hw = hw.mean(axis=2) # lazy method of converting to grayscale
+    rows = np.where(hw[:,1] == 0) # determine rows based on solid black lines
+    cols = np.where(hw[1,:] == 0) # determine columns based on solid black lines
+
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe' #tesseract file path here
     results = []
     for x,i in enumerate(rows[:-1]):
         newList = []
@@ -31,6 +35,7 @@ except: # this requires Tesseract! if you don't have it, you ain't runnin this
     df.Class = df.Class.str.replace("[.:]","") # Tesseract picked up some mistakes on this column, this fixes em
     df.set_index("Name",inplace=True)
     df.to_csv('hw3_table.csv')
+
 
 # GiveBirth, CanFly, LiveInWater, HaveLegs
 x = ["no","yes","yes","no"] # values to check for
