@@ -29,11 +29,17 @@ IMAGE DIFFERENCE
 https://www.pyimagesearch.com/2017/06/19/image-difference-with-opencv-and-python/
 
 
-
-
-
 https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/33418.pdf
 
 
 
 using a whitelist of "Oo-— results in all slot values outputting "oo"
+
+
+
+Previous report summary
+- exploring tesseract
+- methods explored
+- methods unexplored
+
+goals met/unmet

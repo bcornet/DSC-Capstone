@@ -1,0 +1,46 @@
+DSC Capstone Survey:
+
+    (1) Have you engaged in any internship(s)? Is so where and how did you obtain the internship? Is there anything the data science program can do to help students who want internships to land them?
+
+Nope! Too busy. I appreciate all the offers regardless.
+
+As for landing them, I think the best idea is to get the students who've done it before to encourage their peers.
+
+    (2) Have you engaged in research projects (at UMassD or elsewhere) outside of class projects? If so what was the project and how did you find it? Is there anything the program can do to help students who want to take up academic research projects?
+
+Yes! With Julia Fang starting in Fall 2019. She sent out an email for an undergrad RA position and I'm pretty sure no one else responded. Might have been the first research position email since I started at UMD too.
+
+Oh right, I found the original email from Sheryl Sears in case you're curious:
+
+    Multiple paid RA positions are available in Dr. Hua (Julia) Fang's Lab. All positions will be supported by NIH, NSF, or other research funds.
+
+    One undergraduate research assistant: This NSF award ($7,000)  will offer research experiences for our undergraduates, supporting students who are U.S. citizens, U.S. nationals or permanent residents for academic year 2019-2020.  
+
+    The objective of this engagement of undergraduates is to train undergraduates with skills, knowledge and hands-on research experience in advanced computing (not limited to machine learning/statistical learning) and communication technologies as well as intrigue them in research and future graduate studies in mHealth applications.
+
+    This position is limited to Junior status.
+    This RA is expected to continue at least the Master degree.
+
+    2)    Multiple BS-PhD/MS-PhD graduate RAs: these senior RA positions are expected to work with our lab members, local and national collaborative teams in biomedical and m/e-health areas. All RAs in this category are expected to continue their Ph.D studies.
+
+    Interviews will start immediately and will end as long as all positions are filled. We are expecting candidates would have decent GPA, or GRE scores (for MS-PhD RAs) , and can easily work with a team. Students who have taken machine learning and computer graphics or equivalent courses are encouraged to apply. Students with background in database, communication and networking technologies are also encouraged. However, we are not limiting to these areas, as long as the collaborative teams agree.    
+
+    BS-PhD and MS-PhD RA applicants will need to go through a test.  All RA applicants will have an interview with lab members and/or collaborative teams.
+
+    If interested, please send your resume with one  support letter from your professors (a letter of support via email to Dr. Fang will be fine, if internally), GPA, and/or GRE  to Dr. Hua (Julia) Fang at hfang2@umassd.edu.  We will send notifications if selected and no need to send status queries. 
+
+
+Oh yeah, getting students into it... well, more peer encouragement like with internships helps. More importantly: cut back on resumes and letters of recommendation. Talk about these opportunities in class and reach out to students directly instead -- you know us, we know you. The more informal approach is more appealing and frankly more applicable to real-world success stories (compare networking vs. resume spam).
+
+    (3) Have you given talks at conferences or workshops? If so, where and what was the talk title? 
+
+Nope, but I'd like to.
+
+
+    (4) Besides using more exciting datasets (Brian's talk) and issues with course scheduling (which is beyond our control)... what is one thing you think the data science program should do to improve? This could be something small (e.g. making it easier to fill out some form) or large (e.g. a course in data journalism). 
+
+One of the problems with scheduling is that many students aren't sure which classes they need for degree requirements, when they're typically available, or even the existence of certain programs. It's generally worse for students who don't or can't "look ahead" such as freshmen and transfer students.
+
+I'd like to see (or create myself I guess) a definitive catalog of DSC, MTH, CIS, EAS, etc. courses, how they fit into various degrees (DSC BS/MS, EAS PhD options, minors, etc.), related fields (physics, medical, etc.), prerequisite relationships, equivalents (e.g. DSC301 being MTH573/MTH473), and histories of semester availability, times, locations, and instructors. This should eliminate the need to slog through COIN or piece together information from multiple program pages. Ideally, it should predict future availability. A more in-depth implementation could also create recommendations for long-term course plans based on a student's current progress or areas of interest.
+
+In hindsight, this would probably make a great capstone project!

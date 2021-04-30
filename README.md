@@ -1,7 +1,9 @@
 # DSC-Capstone
 UMass Dartmouth Data Science Capstone Project - Repository for DSC 498/499 files
 
-**Project:** Optical Character Recognition and Correction for Images of Digital Displays
+**Title:** Optical Character Recognition and Correction for Images of Digital Displays
+
+**Abstract:** Data structures such as tables and lists are commonly presented through graphical user interfaces (GUIs). In many cases, accessing the data directly is inconvenient or prohibited by the platform itself (Apple iOS, Nintendo consoles, etc.) or unavailable locally as with video streaming. Notably, the data is not private to the user, but collection must be performed by hand. This project introduces a program for Optical Character Recognition (OCR) using Tesseract 4 and Python to convert data displayed in images or videos into discrete structures. Image transformations such as binarization, scaling, skewing, edge detection, and denoising enable compatibility with elaborate GUIs and photographs of digital displays. Predictive methods using Levenshtein and character-shape distances provide text correction to significantly improve output accuracy. Error analysis is also conducted for individual correction methods using several sample images, dictionaries, and fonts.
 
 **Contact:** [Brian Cornet](mailto:bcornet@umassd.edu?subject=[GitHub]%20I%20clicked%20a%20thing)
 
@@ -32,8 +34,8 @@ I came up with a bunch of project ideas for the capstone, most of which I was ho
 - [ ] Experiment with automating correction methods
 - [ ] Experiment with off-screen text-based images
 - [x] Experiment with user-defined dictionary support
-- [ ] \(Optional) Begin development of image comparison methods
-- [ ] Prepare final presentation and report (DSC 499)
+- [x] \(Optional) Begin development of image comparison methods
+- [x] Prepare final presentation and report (DSC 499)
 
 ## Expected DSC499 Timeline Probably
 - February
@@ -116,6 +118,7 @@ I came up with a bunch of project ideas for the capstone, most of which I was ho
        * [Technavio](https://www.technavio.com/) - Data reports on niche topics (e.g. global pancake mix market)
        * [Monster Hunter Rise](https://www.monsterhunter.com/rise/us/) - Monster Hunter is Bri's go-to series for fun data science and finding true love, also Rise is really great
        * [Pokemon on Towards Data Science](https://towardsdatascience.com/tagged/pokemon) - List of articles tagged for Pokemon; lots of examples of how to apply data science to video game data
+       * [TrueSkill 2: An improved Bayesian skill rating system](https://www.microsoft.com/en-us/research/uploads/prod/2018/03/trueskill2.pdf) - Matchmaking method used in Gears of War 4's online multiplayer
     5. **Nick**: Three Aspects of Data Fundamentals (Mar 31st, Week 10)
     6. **Jimmy**: Sports and Data Science (Apr 7th, Week 11)
        * [Paul DePodesta on Wikipedia](https://en.wikipedia.org/wiki/Paul_DePodesta) - Sports data scientist turned MLB/NFL executive

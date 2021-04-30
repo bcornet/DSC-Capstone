@@ -1,0 +1,180 @@
+dsc499_meeting_weekC_04-14-2021
+
+
+lots of stuff today!
+DSC capstone day is the ACTUAL DUE DATE FOR EVERYTHING
+at least the talks
+for BS and MS students
+
+lots of people show up, like 40 people last year
+random people from the community
+
+NOT CURRENTLY SCHEDULED!
+long day, about 4-5 hours
+expected to be there for about an hour
+
+date range from April 30th to May 6th
+
+Jimmy: no finals for me
+Nick: me neither
+Brianna: any day but May 6th
+Marco: also no good for me
+Bri: not sure, might be May 5th 3:00pm-6:00pm
+Ziyu: May 4th 1100-1500not work for me
+Hunter: Monday May 3rd 11:30am-2:30pm
+
+https://www.umassd.edu/media/umassdartmouth/registrar/pdf/Spring-2021-Final-Exam-Schedule.pdf
+Bri classes:
+MW 4:30-5:45
+W 3:00-5:00 <-- no final!
+TT 2:00-3:15 x2 <-- no finals!
+TT 11:00-12:15 <-- no final?
+
+
+TOPIC TALKIES:
+CACHELLE: Intro to Flask, LinkedIn Tips
+
+Flask: python module for web development
+- see also django, web2py
+why Flask? because it's good, damn it
+includes blueprint library
+
+download on Windows:
+	1. create folder
+	2. py-3 -m venv myproject
+	3. install pip (py -m pip --version)
+	4. pip install flask
+	5. create some python file, like flask.py
+	6. export FLASK_APP=flask.py
+	7. run Flask Command flask run
+
+download on Ubuntu:
+	mkdir myproject
+	cd myproject
+	python3-m venv venv
+	pip install flask
+	[oops there's more]
+
+running the program always goes to the first route listed
+here, it's the /about page (even though the root exists)
+
+
+from flask import Flask, render_template, request, redirect, url_for, make_response, send_file
+
+app = Flask(__name__)
+
+@app.route('/about')
+def about():
+    return "Here's what's up with Flask"
+
+@app.route('/')
+def home():
+    return "hello world"
+
+if '_name_' = '_main_':
+    app.run(debug=True)
+
+
+(a lot of stuff is being said and I can't parse it quick enough)
+can edit HTML directly I guess?
+seems like you can isolate code chunks inside each route
+
+	Bri: where'd you first learn about Flask?
+	Cachelle: was in a program that had a software engineering event
+	had a demo version of titanic data, used Flask for API system
+	I connected with the person running it and asked about it
+	seemed neat, I like it
+	
+OH YEAH, if you make the HTML files, make it in the folder
+it's a huge mess if you try to import them from something else
+also can make dashboards
+also can get file/data in python, send to HTML to render as a JSON
+
+	Scott: can you run a jupyter notebook through flask?
+	seems like it just needs a python kernel to run
+	Cachelle: probably, seen other people do it
+	Scott: just googled and got lots of hits for this, woo
+
+LinkedIn: career platform for finding jobs/internships and networking
+stepz:
+	make profile
+	add work/volunteer eperience
+	add summary (skills, passion, resume)
+	build network!
+	find a job probably
+	join in conversations
+
+good profile has a bunch of stuff:
+title of current position
+add passion/story in summary
+research projects and current program
+- guy shows he codes for fun
+
+bad profile stuff:
+personal/silly pictures
+non-descriptive history
+
+[there's a lot but I missed it]
+
+
+Ziyu: Data Visualization
+helpin people interpret results quickly!
+interactivity: add dimensionality not possible through static images
+examples: 
+cdc.gov/coronavirus
+covid.cdc.gov
+(a lot, all related to COVID)
+
+
+
+UPDATES!
+
+Marco:
+submitted paper, got feedback, new submission tonight
+filled in table for left side
+ran CNN, KNN, have algorithm on whole dataset
+question: after doing so many methods, how do I compress to 15 minute talk?
+Scott: do an overview slide discussing all the things you did
+you won't be able to focus on all of them
+might be able to go over algorithms for one or two of them
+CNN maybe since it did the best
+distance measure maybe too
+summary results for all of them
+but yeah, can't get into detail in all, just summarize
+comparison rather than showing math
+if people ask questions, you can focus on that
+otherwise you'll run out of time or confuse people by rushing
+so something like tangent distance, don't get into that too deep
+also ROC curve for CNN and supervised k-means maybe
+
+
+reminder: dry run talks on the 28th!
+
+
+Brianna:
+been looking at comments for feedback
+biggest questions are about SCOTT'S HANDWRITING
+[oh it actually doesn't look that bad]
+
+
+Cachelle:
+worked on html and it works!
+runs ML code, displays image, all of it
+fixed various glitches
+
+
+Ziyu:
+demonstration of map with slide-bar
+report tonight, maybe tomorrow
+	Marco: daily states? sum of states put together?
+	Ziyu: sum of states?
+	Marco: sum of all states or single states?
+	Ziyu: single state, based on box at the top right
+	Marco: maybe indicate interactivity? click here, etc.
+	Scott: youtube demo video embed?
+	Ziyu: well I'll do something, it'll be easy
+	Scott: https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology
+	SIR model and plots
+
+
+[had to leave due to work things]

@@ -1,0 +1,329 @@
+FINAL MEETING!
+
+
+Shawn Manfredo: sports analytics, coach from UMD / Fitchburg state
+
+baseball parameters
+angles, speeds, flight, trajectory, etc.
+
+once we get the data, how do we relay it to the players?
+how can they use it to improve?
+
+we spend 20k on some piece of equipment to measure everything and get all this data
+RPMs on curveball, slider, pitcher stuff, etc.
+
+BUT THEN WHAT?
+
+comes in a .csv file that goes on forever
+
+got 30-something players on a team, they're not gonna think anything of it
+
+two students last year
+
+one made software
+enter in stuff and it'd create the graphic showing it
+
+this is what's being used in private companies in pro baseball
+
+lots of opportunities out there
+
+anyone who saw Moneyball knows that was the beginning
+those were performance numbers (walks, pitches taken, % of balls in play, etc.)
+recently bigger focus on measurements
+so we've got the traditional data for performance
+and also measurements taken live in-game
+
+those were things we talked about last year
+considering budget at Div 3 level vs. Div 1 level vs. pro level, etc.
+budget limitations
+
+lots of people getting into careers just by posting stuff online
+making a presence through social media
+
+jobs that didn't exist previously are now posted jobs
+
+see things like St. Louis Cardinals offering data analytics jobs
+crazy trend over the last 4-5 years
+
+other sports?
+some used in other sports:
+tennis: velocities off of serves, etc.
+NFL: stat-cast type of stuff like speed, scrimmage acceleration, velocity on throw, angel,
+hang-time on punt, etc.
+some of these have been around forever, but now it's being done with radar
+high-speed data capture, not just for replay but also for measurements
+
+I don't follow other sports so I dunno about those industry-wise
+but if you watch from 10 years ago to today, it's completely different
+
+opportunities now exist that didn't before
+someone has to calculate and illustrate!
+not just for the fans but for the coaches and players and teams
+
+I didn't know anything about this 5 years ago
+had to self-teach just to navigate and figure it out
+I'm younger than some of the guys out there, they typically outsource this
+"how does this benefit me?"
+
+Jimmy: would you say betting industries use this more?
+
+Shawn: yeah, I mean I'm more in results
+but systems that do predictive things like in gambling definitely use this
+that stuff is really huge there given how much money is there
+competition always inspires innovation!
+lots of opportunities with those companies, private companies, etc.
+not just betting but prognosticating
+some state-by-state regulations
+could also just be someone who wants to win for whatever reason
+
+Jimmy: yeah I'm interested in working for DraftKings, etc.
+
+Shawn: right, and that's also part of Vegas betting systems
+like if a guy is being selected, their value is going up
+so someone's trying to find out why Tom Brady is more valuable this week,
+someone's coming up with that stuff
+
+Scott: seems like the sports analytics industry is hitting all sorts of areas
+not just the teams, but also betting, media, etc.
+so for college-level, what kind of {something}
+
+Shawn: hittrax, flightscope?, driveline, etc.
+you can look up providers of latest technologies
+those companies themselves are hiring
+as are the users
+trackman does software side of it too
+flightscope sells you the equipment straight-up
+other companies would jump in to handle those
+interesting thing regarding people who've gone onto pro sports analytics:
+most have gotten plucked off of twitter!
+they just present the things that they're seeing
+presenting charts and such, gaining followers
+know a guy who got a job with the Tampa Bay Rays basically from Twitter
+you see that with LinkedIn too kinda
+it does work
+
+Scott: one of the recent grads was saying that the community is super active
+posting projects, blog posts
+if there's an opening, they'll find you
+Shawn: DriveLineBaseball.com
+front end of figuring stuff out
+does controversial stuff like weighted balls
+some people say it causes injuries or harder throws
+they went at it objectively and took notes
+business took off, employees picked up by scouts
+that all came from twitter/instagram, etc.
+even if the job doesn't exist, they're creating them
+Kyle Bodie (spelling)? got job with Cinc Reds
+basically created a job around what he wanted to do
+saw value from something
+
+Scott: very different from what I imagined
+Shawn: yeah sometimes you gotta sift through everything
+lots of people are trying to break through
+some of it is nonsense, graspin at straws
+
+Scott: what about internships? Fitchburg State, sports teams?
+Shawn: yup, especially bigger schoosl
+
+graduate assistants (can get degree)
+skewed towards the tech side of things?
+wakeforest website: coaching staff
+see people like JAmes madison doing thing
+"director of data analytics" positions that didn't exist before
+Div 3 schools don't have the same resources so probably less
+different financial availability at something like UMD vs. Atlanta
+can definitely search for grad schools for that
+tried to do at UMD, success at Fitch:
+current students (work study, team management, resume building)
+had a guy last year: his job was just to run the flightscope
+now it's on his resume: director of analytics at UMD
+wasn't a real spot before, now it is!
+
+Jimmy: important to get a grad degree? or is BS okay?
+Shawn: tough to tell, one of the big debates in general
+are there too many prereqs in the job field?
+do you really need a MS for head coaching?
+lots of schools list it as a requirement
+tough to say
+never hurts to be the most educated one in the pool
+biggest fish!
+
+Shawn: keep us in mind next year for talks!
+Scott: next year will be in person, so probably needing a list of locals
+make a collection of data
+
+
+
+PRACTICE PRESENTATIONS!
+
+we're gonna do 10+2 but we'll go and keep going
+gonna have link to videos
+
+
+12:15: Detecting Medical Errors in the Cancer Screening Process: An In-Depth Review of Lung Cancer Screening and At-Risk Qualifications. Brianna Johnson (DSC senior)
+12:27: Predicting Disease in Leaves Using Machine Learning. Hunter Canning (DSC senior)
+12:39: Cluster Analysis of COVID-19 Database in USA with Data Visualizations. Ziyu Xia (DSC senior)
+12:51: Optical Character Recognition and Correction for Images of Digital Displays. Brian Cornet (DSC senior)
+01:03: How Much Does Salary Factor into Performance in the MLB? Jimmy Mcrae (DSC senior)
+01:15: An Introduction to Handwritten Digit Recognition Algorithms. Marco Sousa (DSC senior)
+01:27: DataMatch: A website for matching datasets to machine learning algorithms. Cachelle Johnson-Lewis (DSC senior)
+01:39: Shopping Behavior Analysis with Data Analytics Tools. Nicholas Cen (DSC senior)
+
+
+Brianna
+Hunter
+Ziyu
+Brian
+Jimmy
+Marco
+Nick
+[no Cachelle today]]
+
+
+BRIANNA
+trying to fit topic into 10 minutes, been practicing
+consistent tempo and excellent diction
+to improve time, will need to trim speaking notes
+
+q's: what attributes would you conclude to be significant?
+[typo on discussion slide: "True Positivte" in image]
+
+Brianna: will try cutting down on first two slides
+would rather spend more time on the actual results
+Scott: speaking is very clear but also very fast
+if you go 11-12 minutes, you're not gonna get shutoff
+you'll eat into question time though
+will be okayish
+here's a trick: spend 30-40 seconds on the last slide
+cut down the text so there's less stuff on there
+bullet points don't have to be full sentences
+
+"oh I see I'm running out of time, I'll just leave this slide up"
+instead of a last slide that says "Questions" in big letters,
+just slap "questions" into the last slide somewhere
+also don't need references
+
+Bri: conclusion?
+Brianna: emphezyma, BMI over 25, bronchitis, fam history of lung cancer
+education is consider which is interesting
+
+Scott: could lead with the simpler model
+could use it to describe what a doctor would do with this chart
+then you can go to the more complicated model
+that shows that it doesn't add much more accuracy but is much more complicated
+gives people a chance to digest the easier one, then go advanced
+
+
+HUNTER
+lots of moving Zoom window out of the way
+everyone should remember to consider positioning
+
+illustrations of code or data segmenting?
+image slides with text slides?
+
+Zoom window thing:
+Scott: nothing I can do on my end
+but if you wanna do another dry run, just start your own zoom session
+don't need anyone, just you is fine
+can start screensharing, that should replicate the real deal
+Brian: may vary depending on number of participants and shape/size
+Scott: there's a window with peoples faces in it
+click the skinny bar, that'll give you the smallest window
+there's also zoom screenshare bar that's almost invisible but gets in the way
+if you move it at the start of the talk and kinda forget it's there,
+that should help
+for participants, you can do things to hide/minimize
+
+Marco: can you go back to batch size/epoch?
+batch size of 8 doesn't mean 8 images per epoch
+if you had 2000 rows, epoch of 2 means all images twice
+batch size 8 means passes through 8, feed forward, update
+doesn't mean you need a bunch of epochs to do each in 8
+bunch of epochs 2000/8 -> 250 iterations
+can do any number of epochs with batch size
+batch size is how many images being passed through before being updated
+not the number being used per epoch
+
+Hunter: time?
+Scott: 5 minutes
+Hunter: more time on results as I add them
+Scott: can describe the images more too
+like the neural network wasn't really described
+would say something like each pixel influences next layer
+elements of layer 1 influences layer 2, etc.
+ReLU function adds non-linearity to this
+output layer is the prediction based on the five categories
+could spend a good 30-60 seconds on explaining this
+also explain why you picked Neural Network
+also advertise for Marco covering image classification
+also add in sample images to get an idea for what to look at
+
+Hunter: how to improve accuracy?
+Scott: try different parameters
+try different attributes to look at as well
+bonus office hours from 11-1, can meet then
+
+
+ZIYU: (can go with Damon) 
+yes, it's pronounced ZEE-you
+
+whoa, some of this is already done! looks good
+had some sort of technical issue at the beginning; notes?
+Ziyu doesn't talk fast, so maybe trim out stuff like speaking about examples
+let the slides talk
+
+Scott: 12 minutes, but some delay at beginning
+
+Bri: notes solution:
+use two monitors or phone or something
+maybe print them out?
+
+
+
+BRIAN
+
+presented quantum paper from ECE 621
+idea was to focus on layout and design
+some possible improvements possible
+
+animations are good!
+Marco liked it!
+
+didn't practice beforehand, so a little bit confusing
+in hindsight, I think I kinda rushed this presentation? I forget how I did presenting it last time
+questions typically about quantum computing aspects not covered here, expected given how unusual it is
+
+
+JIMMY
+
+good idea to mention data cleaning, filtering, partitioning, joining
+
+context for lower salaries in 2002-2004?
+
+
+Scott: missed some stuff
+pitchng visualization: can probably remove confidence bands
+there's already a lot going on
+also describing maybe two of the figures
+can explain that wins is highly coorelated with strikeouts, etc.
+fewer players hitting the ball means fewer chances for other team to score, obviously
+in salary column, things like ERA don't have a high correlation
+
+for dip in salaries: either find the reason or don't acknowledge it
+if someone asks, say you looked into it and didn't find the answer
+seems ike salary ~ RBI model shows two models
+
+don't give the audience too much credit, it takes them a while to digest stuff
+pick one figure and describe it
+
+Brianna: is previous slide controlled for inflation?
+Jimmy: nope!
+Brianna: would be interesting to see how it looks with adjustment to see if it's constant
+market crash in 2008 doesn't appear significant here
+Scott: yeah 9/11 might explain 2003
+if you're just looking for a quick figure for the audience to look at,
+maybe median salary for US employee by year
+see the typical growth 
+more images!
+animations are great
+even if it's not describing data, it's good to have for context
