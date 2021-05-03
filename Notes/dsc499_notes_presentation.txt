@@ -1,0 +1,96 @@
+
+remember to disable the Windows thing before doing this to keep the fan quiet!
+
+outline:
+
+introduce concept
+OCR output
+image correction (the good ones)
+dictionary
+
+
+must include accuracy comparison from individual cleaning methods!
+can probably reuse slides from previous reports
+
+try to figure out how to make gifs
+
+https://itsfoss.com/make-gif-in-gimp/
+
+- open images as layers
+- optimize for GIF
+- export as .gif
+- set to animate, loop
+
+
+
+
+profile pictures:
+200x300 for 4Cs
+150x200 for UMD
+
+also Donghui, Gary, Eric are unique
+
+8 from UMD
+Donghui
+Gary
+Josh
+Ryan
+
+5 from 4Cs
+Eric
+Breski
+
+19 total
+
+
+169x225 for most
+
+
+
+1.13 for each
+7 in center
+
+8.81 width
+
+HORIZONTAL:
+     4.33      5.59	     6.85      8.11      9.37      10.63
+3.70      4.96      6.22      7.48      8.74      10.00      11.26
+     4.33      5.59	     6.85      8.11      9.37      10.63
+
+ordered alphabetically, Alfa in the center (Alfabetically!)
+
+
+
+
+donghui base:
+897 x 676
+
+phone:
+2016 x 1512	[4:3]
+
+22 major slides
+29 total slides
+
+10 minutes with 2 minutes for questions
+
+aim for:
+ 5 seconds per minor slide
+25 seconds per major slide
+
+
+
+Yanlai notes py code (be sure to thank him!):
+
+a = ["Chord secant and Navon's adeterods",
+"Idea usemoreinformationthan just the sign ofthefaaetimf",
+"ego fexch f exam",
+"ReviewTaylor Serves Expansive",
+"approximating afractionfun around some fixed point x"]
+
+b = ["② Chord, Secant, and Newton’s methods",
+"• Idea: use more information than just the sign of the function f",
+"e.g. f(x(k)), f’(x(k)) …",
+"Review Taylor Series Expansion:",
+" approximating a function f(x) “around” some fixed point x"]
+
+l = 71+120+40+60+111

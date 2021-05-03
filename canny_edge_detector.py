@@ -155,3 +155,36 @@ def visualize(imgs, format=None, gray=False):
         plt.subplot(2, 2, plt_idx)
         plt.imshow(img, format)
     plt.show()
+    
+
+dy = Image.open('donghui.jpg')
+dynp = np.array(dy)
+
+
+
+
+
+
+#canny = ['donghui.jpg','donghui_base.png']
+#canny = ['mhgu.jpg','bri_mhgu_clean.jpg','bri_mhgu_photo.jpg']
+canny = ['bri_acnh_clean.jpg','bri_acnh_photo.jpg']
+
+#for i in ['mhgu.jpg','mhgu2.png','acnh.jpg','acnh2.png']:
+imgArray = []
+for i in canny:
+    imgArray.append(rgb2gray(np.array(Image.open(i))))
+
+detector = cannyEdgeDetector(imgArray, sigma=1.4, kernel_size=5, lowthreshold=0.09, highthreshold=0.17, weak_pixel=100)
+imgs_final = detector.detect()
+for i in canny:
+    imgs_final.append(np.array(img[i]))
+visualize(imgs_final, 'gray')
+
+
+# without something like a CNN or input from the user, 
+# it'll be very difficult to determine table boundaries in images like acnh.jpg
+# BUT! for something like mhgu.jpg, it should be easy to detect
+# on the other hand, anch.jpg has some fairly obvious row separators,
+# whereas mhgu.jpg has many row boundaries cut off
+# also acnh.jpg's actual font is perfectly legible just from this method, mhgu.jpg's is not
+# also also try Sobel filter at some point

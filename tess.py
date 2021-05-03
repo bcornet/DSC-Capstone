@@ -18,7 +18,7 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 #print(s)
 
 L = ['test.png','fft.png','acnh.png','acnh.jpg','mhgu.jpg','acnh2.png','acnh3.png','mhgu2.png','mhgu3.png',
-'mhgu3-1.png','mhgu3-2.png','mhgu3-3.png','mhgu3-4.png','mhgu3-5.png']
+'mhgu3-1.png','mhgu3-2.png','mhgu3-3.png','mhgu3-4.png','mhgu3-5.png',"donghui.jpg","donghui_base.png"]
 invL = []
 img = {}
 text = {}

@@ -301,16 +301,33 @@ def predict(i=0,j=0):
         return most_frequent(List)
     return ""
 
+def predictX(i=0,j=0):
+    List = []
+    for k,v in testX.items():
+        s = testX[k][i][j]
+        if s != '':
+            List.append(s)
+    if List:
+        return most_frequent(List)
+    return ""
+
 predicted = {} # final result list
+predictedX = {} # without
 predAcc = np.zeros([9,5]) # accuracy of results
+predAccX = np.zeros([9,5]) # without again
 
 for i in range(9): # row
     l = []
+    lx = []
     for j in range(5): # col
         p = predict(i,j)
         l.append(p)
         predAcc[i,j] = lev(p,mhgu[i][j],True)
+        px = predictX(i,j)
+        lx.append(px)
+        predAccX[i,j] = lev(px,mhgu[i][j],True)
     predicted[i] = l
+    predictedX[i] = lx
 
 # predAcc.mean() 
 # returns 0.9296296296296297 when using whitelist method
@@ -461,43 +478,5 @@ array([[ 0.24, -0.43,  0.79,  0.  ,  0.43],
 # but it also has less bleeding between adjacent characters
 
 # I'll include the download link for this when I clean it up
-AC = pd.ExcelFile("C:\\Users\\bcorn\\Documents\\AC\\Data Spreadsheet for Animal Crossing New Horizons.xlsx")
-
-housewares = pd.read_excel(AC,"Housewares")
-house = housewares.Name.unique().tolist()
-
-# this takes a while; should be 605 housewares in ACNH, so 182710 calculations
-# comparatively, MHGU skills has 205 items, so 20910 calculations
-acnh_levmat_house = levmat(house,output="s")
-# heatmap shows many bright spots:
-# same set items ("wooden-block ___", "ironwood ___", etc.)
-# same shape items ("____ chair", "____ bed", etc.)
-# crazy coincidences ("peach chair" and "beach chair" for example)
-# closest match was 0.96 for Mr. and Mrs. Flamingo, congrats to the newlyweds
-# this indicates a potential accuracy issue when using a large dictionary
-# note also that ACNH capitalizes the first letter in each item in menus
-# will need to account for list corrections
-
-acnh_levmat_house[acnh_levmat_house < 1].sort_values(ascending=False)
-
-
-
-
-imgArray = []
-for i in ['mhgu.jpg','mhgu2.png','acnh.jpg','acnh2.png']:
-    imgArray.append(rgb2gray(np.array(img[i])))
-
-detector = cannyEdgeDetector(imgArray, sigma=1.4, kernel_size=5, lowthreshold=0.09, highthreshold=0.17, weak_pixel=100)
-imgs_final = detector.detect()
-visualize(imgs_final, 'gray')
-
-
-# without something like a CNN or input from the user, 
-# it'll be very difficult to determine table boundaries in images like acnh.jpg
-# BUT! for something like mhgu.jpg, it should be easy to detect
-# on the other hand, anch.jpg has some fairly obvious row separators,
-# whereas mhgu.jpg has many row boundaries cut off
-# also acnh.jpg's actual font is perfectly legible just from this method, mhgu.jpg's is not
-
 
 

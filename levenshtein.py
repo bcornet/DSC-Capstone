@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 
 
-def levenshtein_ratio_and_distance(s, t, ratio_calc = False):
+def levenshtein_ratio_and_distance(s, t, ratio_calc = True):
     """ levenshtein_ratio_and_distance:
         Calculates levenshtein distance between two strings.
         If ratio_calc = True, the function computes the
@@ -41,7 +41,7 @@ def levenshtein_ratio_and_distance(s, t, ratio_calc = False):
             distance[row][col] = min(distance[row-1][col] + 1,      # Cost of deletions
                                  distance[row][col-1] + 1,          # Cost of insertions
                                  distance[row-1][col-1] + cost)     # Cost of substitutions
-    if ratio_calc == True:
+    if ratio_calc:
         # Computation of the Levenshtein Distance Ratio
         Ratio = ((len(s)+len(t)) - distance[row][col]) / (len(s)+len(t))
         return Ratio
@@ -73,7 +73,7 @@ def levmat(lst=[],output=None,show=True,echo=True):
     numpyL = ['n','np','numpy','matrix']
     pandasL = ['p','d','df','dataframe','pandas']
     seriesL = ['s','stack','series','list']
-    if s < 1:
+    if not lst:
         print("Invalid list provided, returning None.")
         return None
     levmat = np.eye(s) # identity matrix based on length of list
@@ -81,7 +81,7 @@ def levmat(lst=[],output=None,show=True,echo=True):
         print("Starting Levenshtein matrix...")
     for i in range(0,s):
         for j in range(i+1,s):
-            levmat[i,j] = lev(lst[i],lst[j],True)
+            levmat[i,j] = levenshtein_ratio_and_distance(lst[i],lst[j],True)
     if echo:
         print("Done with Levenshtein matrix!\nShowing plot...")
     symmat = levmat + levmat.T - np.eye(s)
