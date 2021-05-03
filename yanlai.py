@@ -1,4 +1,4 @@
-# Yanlai notes py code (be sure to thank him!):
+# Yanlai notes py code (be sure to thank him!)
 
 import numpy as np
 from levenshtein import levenshtein_ratio_and_distance as lev
@@ -41,4 +41,4 @@ for i in range(5):
 
 print("------\nweighted accuracies:")
 print(acc2)
-print(acc2.mean())
+print(acc2.sum())
