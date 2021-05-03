@@ -29,12 +29,12 @@ I came up with a bunch of project ideas for the capstone, most of which I was ho
 - [x] Implement xy-plane rotation method
 - [x] Implement xz- and yz-plane skew methods
 - [x] Implement noise removal method
-- [ ] Implement dilation/erosion methods
-- [ ] Implement border addition/removal methods
-- [ ] Experiment with automating correction methods
-- [ ] Experiment with off-screen text-based images
+- [x] Implement dilation/erosion methods
+- [x] Implement border addition/removal methods
+- [x] Experiment with automating correction methods
+- [x] Experiment with off-screen text-based images
 - [x] Experiment with user-defined dictionary support
-- [x] \(Optional) Begin development of image comparison methods
+- [x] Develop of image comparison methods
 - [x] Prepare final presentation and report (DSC 499)
 
 ## Expected DSC499 Timeline Probably
