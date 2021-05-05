@@ -10,9 +10,14 @@ UMass Dartmouth Data Science Capstone Project - Repository for DSC 498/499 files
 **Instructor:** [Scott Field](mailto:sfield@umassd.edu?subject=[GitHub]%20DSC499%20Capstone%20%2D%20Brian%20Cornet)
 
 ## Structure
-Relevant project files will be kept in the root directory. This includes the primary script "tess.py" and various sample images used in experimentation. Note that you'll need to instsall Tesseract OCR and PyTesseract in order to run this.
+Relevant project files will be kept in the root directory. This includes the primary script "tess.py" and various sample images used in experimentation. Note that you'll need to install Tesseract OCR and PyTesseract in order to run this. Post-transformation images and graphs have been moved to the Output folder.
 
-Check the Notes folder for weekly notes and doodles. Presentations contains various Microsoft PowerPoint Presentation (.pptx) and Microsoft Word Document (.docx) files both in their original formats and as .pdf files. As of January 26th, the latter folder takes up about 60 MB, so heads up.
+Check the Notes folder for weekly notes and doodles. Presentations contains various Microsoft PowerPoint Presentation (.pptx) and Microsoft Word Document (.docx) files both in their original formats and as .pdf files. As of May 5th, the latter folder takes up about 112 MB, so heads up. Also there's an Other folder which just contains random stuff from other classes because I'm too lazy to set up another git. 
+
+## Presentation
+[May 3rd, 12:51 PM as part of Data Science Capstone Day via Zoom meeting.](https://bitbucket.org/cscvr/data-science-capstone-day-umassd/wiki/Home)
+
+Recording coming soon!
 
 ## What's the Deal?
 I came up with a bunch of project ideas for the capstone, most of which I was hoping would be useful or enlightening to develop. This one was my favorite, so I went with it. Pretty sure my plan was to use this to make it easier to nerd out over my stats and inventories in video games. Bonus: being able to use images from stuff I like as examples! It's been a hoot thus far. The last semester was largely a matter of familiarizing myself with Tesseract OCR with some basic experiments involving image clean-up. Taking ECE 621 at the same time was super convenient too.
@@ -95,11 +100,16 @@ I came up with a bunch of project ideas for the capstone, most of which I was ho
     1. **Apoorva Ramesh** (Feb 17th, Week 5)
     2. **Michelle Barnes** (Mar 3rd, Week 7)
     3. **Hannah Smith** (Apr 7th, Week 11)
+    4. **Shawn Manfredo** (Apr 28th, Week 13)
   * [Hack.Diversity](https://www.hackdiversity.com/) - From Michelle Barnes; Boston-based mentoring and career program for PoC in STEM, 
   * Learning Sciences Programs from Hannah Smith:
     1. [ASSISTments](https://new.assistments.org/) - Massive datasets of grade school students' problems and answers
     2. [Wearable Learning Cloud Platform (WLCP)](http://wearablelearning.org/) - Platform for designing and playing math games for teaching
     3. [Graspable Math Activities](https://graspablemath.com/) - Algebra tools for visualizing expression transformations
+  * Baseball Analytics Services from Shawn Manfredo:
+    1. [HitTrax](https://www.hittrax.com/) - Infrared camera for capturing real-time object trajectory data
+    2. [FlightScope](https://flightscope.com/) - Radar and camera hybrid for capturing real-time object trajectory data
+    3. [Driveline Baseball](https://www.drivelinebaseball.com/) - Program for training baseball players using data science
   * Topic Talks:
     1. **Brianna**: Robotic Process Automation (RPA) (Feb 24th, Week 6)
        * [Automation Anywhere](https://www.automationanywhere.com/) - Cloud RPA platform, also certification
@@ -124,3 +134,8 @@ I came up with a bunch of project ideas for the capstone, most of which I was ho
        * [Paul DePodesta on Wikipedia](https://en.wikipedia.org/wiki/Paul_DePodesta) - Sports data scientist turned MLB/NFL executive
        * [James Holzhauer on Wikipedia](https://en.wikipedia.org/wiki/James_Holzhauer) - Jeopardy superstar who uses predictive models for sports gambling
        * [Katerina Wu Has Dream Job as Penguins Data Scientist](https://www.nhl.com/penguins/news/katerina-wu-has-dream-job-as-penguins-data-scientist/c-322941668) - Awesome story of getting a DSC dream job with your favorite pro sports team as a 22-year-old college grad
+    7. **Cachelle**: Introduction to Flask & LinkedIn Tips (Apr 14th, Week 12)
+       * [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)
+       * [LinkedIn](https://www.linkedin.com/)
+    8. **Ziyu**: Data Visualization
+       * [CDC Examples](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/data-visualization.htm)
