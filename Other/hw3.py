@@ -38,7 +38,7 @@ except: # this requires Tesseract! if you don't have it, you ain't runnin this
 
 
 # GiveBirth, CanFly, LiveInWater, HaveLegs
-#x = ["no","yes","yes","no"] # values to check for
+#x = ["no","yes","yes","no"] # for homework 3
 x = ["yes","no","no","yes"] # for exam 2
 Ycol = 'Class' # variable to determine
 

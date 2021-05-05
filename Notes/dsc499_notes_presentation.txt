@@ -78,19 +78,9 @@ aim for:
 25 seconds per major slide
 
 
-
-Yanlai notes py code (be sure to thank him!):
-
-a = ["Chord secant and Navon's adeterods",
-"Idea usemoreinformationthan just the sign ofthefaaetimf",
-"ego fexch f exam",
-"ReviewTaylor Serves Expansive",
-"approximating afractionfun around some fixed point x"]
-
-b = ["② Chord, Secant, and Newton’s methods",
-"• Idea: use more information than just the sign of the function f",
-"e.g. f(x(k)), f’(x(k)) …",
-"Review Taylor Series Expansion:",
-" approximating a function f(x) “around” some fixed point x"]
-
-l = 71+120+40+60+111
+Title	0:00 - 0:10
+Part1	0:10 - 3:30
+Part2	3:30 - 5:15
+Part3	5:15 - 7:25
+Part4	7:25 - 9:10
+Ending	9:10 - whenever
