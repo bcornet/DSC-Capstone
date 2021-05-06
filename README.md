@@ -74,6 +74,8 @@ I came up with a bunch of project ideas for the capstone, most of which I was ho
     * [Skewing Sample from mzucker on GitHub](https://github.com/mzucker/unproject_text)
     * [OpenCV Image Denoising Tutorial](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_photo/py_non_local_means/py_non_local_means.html)
     * [Canny Edge Detection Step-by-Step on Towards Data Science](https://towardsdatascience.com/canny-edge-detection-step-by-step-in-python-computer-vision-b49c3a2d8123)
+  * [OpenCV-Python Tutorials](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html)
+    * [Image Processing in OpenCV](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_table_of_contents_imgproc/py_table_of_contents_imgproc.html#py-table-of-content-imgproc)
 * Data Science Tools:
   * [GitGuide on GitHub](https://github.com/git-guides/)
     * [Creating a Simple Pull Request from Jake Vanderplas on YouTube](https://www.youtube.com/watch?v=rgbCcBNZcdQ)
