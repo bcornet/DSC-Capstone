@@ -1,5 +1,7 @@
 # this didn't work at all, unfortunately
-# also I forget which libraries were required
+# also I forget which libraries were required so good luck
+# also I forget where I got this, but google Shi Tomashi and you might find it
+
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt

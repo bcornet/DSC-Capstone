@@ -72,6 +72,7 @@ print("Dimensions: Width=%d,Height=%d"%(w,h))
 imgset = []
 charlen = len(charset)
 characc = np.zeros([charlen,charlen])
+charblank = pd.Series(np.zeros(charlen),index=charset)
 for s in charset:
     img = Image.new('L', (w, h), 255)
     d = ImageDraw.Draw(img)
@@ -79,8 +80,9 @@ for s in charset:
     charimage = np.array(img).astype(int)
     j = len(imgset)
     imgset.append(charimage)
+    charblank[s] = charimage.sum()
     for i,v in enumerate(imgset[0:-1]):
-        newacc = 1 - np.abs(charimage - v).mean()/255
+        newacc = 1 - ((charimage - v)**2).mean()/65535
         characc[i,j] = newacc
         characc[j,i] = newacc
     characc[j,j] = 1

@@ -1,6 +1,5 @@
-# don't confuse this with mhgu_thresh.py!
-# use this one to predict output on mhgu2.png with and without dictionary support
-
+# this is largely copy-pasted from the other mhgu.py script
+# use this one to look at threshold accuracy on mhgu3.png
 
 import pandas as pd
 import numpy as np
@@ -20,10 +19,10 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 
 
 try:
-    image = img['inv_mhgu2.png'].copy()
+    image = img['inv_mhgu3.png'].copy()
 except:
     try:
-        image = Image.open('mhgu2.png')
+        image = Image.open('mhgu3.png')
         if image.mode == 'RGBA':
             image = image.convert('RGB')
         image = Image.fromarray(np.array(image) ^ 255)
@@ -32,17 +31,7 @@ except:
 
 show_levmats = False
 
-mhgu = {
-0: ["Sharpness","+5","Critical Up","+4","ooo"],
-1: ["Blunt", "+2", "Critical Up", "+5","oo-"],
-2: ["Crit Draw", "+5", "Chain Crit", "-1", "ooo"],
-3: ["Sheathing","+10","Snowbaron X","+1","oo-"],
-4: ["Sheathing","+9","Sharpness","-4","ooo"],
-5: ["Sheathing","+5","Expert","+10","o--"],
-6: ["Sheathing","+5","Tenderizer","+4","o--"],
-7: ["Sheathe Sharpen","+10","Dreadqueen X","+2","oo-"],
-8: ["Sheathe Sharpen","+7","Expert","+8","oo-"]
-}
+mhgu = {0: ["Sheathing","+10","Snowbaron X","+1","oo-"]}
 
 mhgu_minus = [str(x) for x in list(range(-10,0))]
 mhgu_plus = ['+'+str(x) for x in list(range(1,14))]
@@ -185,7 +174,7 @@ if show_levmats:
 starts=[0,112,150,262,301]
 ends=[111,149,261,300,359]
 conf_skill = '--psm 7'
-conf_pm = '--psm 7'# -c tessedit_char_whitelist=0123456789+-–'
+conf_pm = '--psm 7' #-c tessedit_char_whitelist=0123456789+-–'
 conf_slot = '--psm 7'# -c tessedit_char_whitelist=Oo-–'
 configs=[conf_skill,conf_pm,conf_skill,conf_pm,conf_slot]
 
@@ -202,12 +191,12 @@ ims = {}
 #imageArray = cv2.fastNlMeansDenoisingColored(np.array(image),None,10,10,7,21)
 imageArray = np.array(image)
 
-for X in range(167,177):
+for X in range(1,255):
     print("Starting image at threshold of %d..."%X)
     doot = (((imageArray > X) > 0)*255).astype('uint8')
     d = {}
     dy = {}
-    for i in range(9):
+    for i in range(1):
         print("\tRow %d [ "%i,end='')
         d[i] = {}
         dy[i] = {}
@@ -216,17 +205,18 @@ for X in range(167,177):
             d[i][j] = val
             print(j,end=' ')
         print(']')
-            #print("%s: %s"%((i,j),d[i][j]))
-    testX[X] = d
-    testY[X] = dy
+                #print("%s: %s"%((i,j),d[i][j]))
+        testX[X] = d
+        testY[X] = dy
 
 #S_skills = [mhgu_skill, mhgu_space, mhgu_punct]
 
 # acc is an array of the lev distance between the predicted (after dictionary) results vs. actual values
-acc = np.zeros([len(testX),9,5])
+acc = np.zeros([len(testX),1,5])
+xacc = np.zeros([len(testX),1,5])
 xk = 0
 for k,v in testX.items(): # k is the index, v is the table
-    for i in range(9): # row
+    for i in range(1): # row
         for j in range(5): # col
             orig = v[i][j]
             real = mhgu[i][j]
@@ -266,6 +256,7 @@ for k,v in testX.items(): # k is the index, v is the table
                 else:
                     truelev = lev(real,maxstr,True)
                 acc[xk][i][j] = truelev
+                xacc[xk][i][j] = maxval
             testY[k][i][j] = maxstr
             testdet[(k,i,j)] = [orig,maxstr,maxval,real,truelev]
             if truelev < 1:
@@ -319,10 +310,10 @@ def predictX(i=0,j=0):
 
 predicted = {} # final result list
 predictedX = {} # without
-predAcc = np.zeros([9,5]) # accuracy of results
-predAccX = np.zeros([9,5]) # without again
+predAcc = np.zeros([1,5]) # accuracy of results
+predAccX = np.zeros([1,5]) # without again
 
-for i in range(9): # row
+for i in range(1): # row
     l = []
     lx = []
     for j in range(5): # col
@@ -334,6 +325,36 @@ for i in range(9): # row
         predAccX[i,j] = lev(px,mhgu[i][j],True)
     predicted[i] = l
     predictedX[i] = lx
+
+
+x = np.arange(1,255)
+y = np.reshape(xacc,(254,5))
+
+y2 = (y > 0)*1
+
+
+plt.figure(1,figsize=(13, 6))
+plt.plot(x,y[:,0],'b-',lw=1,label='"Sheathing"')
+plt.plot(x,y[:,1],'g-',lw=1,label='"+10"')
+plt.plot(x,y[:,2],'c-',lw=1,label='"Snowbaron X"')
+plt.plot(x,y[:,3],'y-',lw=1,label='"+1"')
+plt.plot(x,y[:,4],'r-',lw=1,label='"oo-"')
+plt.plot(x,y.mean(axis=1),'k-',lw=2,label='Average')
+
+plt.legend(loc='best')
+plt.title('"mhgu3.png" Threshold vs. Accuracy Plot')  # LATEX equations!
+plt.xlabel("Threshold")
+plt.ylabel("Accuracy")
+
+a = 10
+#plt.xticks([0,255]+list(range(a,255,a)))
+plt.xticks(list(range(a,254,a)))
+plt.xlim(1,254)
+plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)
+plt.savefig("mhgu_threshplot.png")
+
+plt.show()
+
 
 # predAcc.mean() 
 # returns 0.9296296296296297 when using whitelist method

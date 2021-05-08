@@ -3,9 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-
-
-
 def levenshtein_ratio_and_distance(s, t, ratio_calc = True):
     """ levenshtein_ratio_and_distance:
         Calculates levenshtein distance between two strings.
@@ -15,9 +12,29 @@ def levenshtein_ratio_and_distance(s, t, ratio_calc = True):
         distance between the first i characters of s and the
         first j characters of t
     """
+    # skip everything if both strings are identical
+    if s == t:
+        if ratio_calc:
+            return 1.0
+        else:
+            return "The strings are 0 edits away"
+   
     # Initialize matrix of zeros
     rows = len(s)+1
     cols = len(t)+1
+    
+    # if one of the strings is empty, maximum distance
+    if rows == 1:
+        if ratio_calc:
+            return 0.0
+        else:
+            return "The strings are %d edits away"%len(t)
+    if cols == 1:
+        if ratio_calc:
+            return 0.0
+        else:
+            return "The strings are %d edits away"%len(s)
+    
     distance = np.zeros((rows,cols),dtype = int)
 
     # Populate matrix of zeros with the indeces of each character of both strings
@@ -46,7 +63,7 @@ def levenshtein_ratio_and_distance(s, t, ratio_calc = True):
         Ratio = ((len(s)+len(t)) - distance[row][col]) / (len(s)+len(t))
         return Ratio
     else:
-        # print(distance) # Uncomment if you want to see the matrix showing how the algorithm computes the cost of deletions,
+        # Uncomment if you want to see the matrix showing how the algorithm computes the cost of deletions,
         # insertions and/or substitutions
         # This is the minimum number of edits needed to convert string a to string b
         return "The strings are {} edits away".format(distance[row][col])
@@ -78,17 +95,32 @@ def levmat(lst=[],output=None,show=True,echo=True):
         return None
     levmat = np.eye(s) # identity matrix based on length of list
     if echo:
-        print("Starting Levenshtein matrix...")
+        print("Creating Levenshtein matrix...")
     for i in range(0,s):
         for j in range(i+1,s):
             levmat[i,j] = levenshtein_ratio_and_distance(lst[i],lst[j],True)
-    if echo:
-        print("Done with Levenshtein matrix!\nShowing plot...")
-    symmat = levmat + levmat.T - np.eye(s)
-    plt.imshow(symmat, cmap='hot', interpolation='nearest')
-    plt.show()
-    if echo:
+    if echo: # for mean and std, ignore
         print("Done!")
+    symmat = levmat + levmat.T - np.eye(s)
+    if echo:
+        df = pd.DataFrame(symmat.copy(), columns=lst, index=lst)
+        series = df.copy().stack()
+        desc = series[series<1].describe()
+        desc['count'] = desc['count']/2
+        print("\nShowing summary statistics...\n[All Pairs]") # summary of all combinations
+        print(desc)
+        print("\n[Maximums]") # summary of the closest matches; worst case scenarios
+        print(pd.Series((symmat-np.eye(s)).max(axis=0)).describe())
+        print("\n[Lengths]") # summary of the string lengths themselves
+        print(pd.Series(lst).str.len().describe())
+    if show:
+        if echo:
+            print("\nShowing plot...")
+        plt.imshow(symmat, cmap='hot', interpolation='nearest')
+        plt.show()
+        if echo:
+            print("Done!")
+
     if output in numpyL:
         return symmat
     elif output in pandasL:
